@@ -1,0 +1,59 @@
+@font-face {
+	font-family: Geolight;
+	src: url(../assets/GeosansLight.ttf);
+}
+
+body {
+	background-color: green;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: #f8f7f7;
+	font-family: GeoLight;
+	text-decoration: bold;
+	font-size: 250%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: stretch;
+	margin: 0;
+}
+
+nav > div a{
+	/*background-color: pink;*/
+	text-decoration: none;
+	color: #060606;
+}
+
+nav div {
+	/*background-color: blue;*/
+	height: 90px;
+	display: flex;
+	align-items: center;
+}
+
+#contactpos {
+	position: relative;
+}
+
+#hovercontact:hover #dropdownmenugeneral {
+	visibility: visible;
+}
+
+#dropdownmenugeneral {
+	visibility: hidden;
+	position: absolute;
+	top: 55px;
+	background-color: gold;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#dropdownmenugeneral > div {
+	background-color: red;
+	margin-top: 60px;
+	text-align: left;
+}
