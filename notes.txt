@@ -1,0 +1,4 @@
+Espace sur les cotés, blanc, et gris, avec ombres, types material design? ON fait un tableau en en flex avec tous les elements, environ 4 par ligne. Photos, prix et achat. Lien vers une seule page de produit générique
+Léger effet de zoom en hover sur les élements. On mets aussi des olbres autour des cadresn démarquations. peut etre le boutoj d'achat en jaune. Légèrement arrondi
+Surbrillance bouton en changeant couleur ombre + ombre interne ?
+Déroulement description

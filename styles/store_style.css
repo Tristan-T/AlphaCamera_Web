@@ -8,35 +8,37 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  font-family: GeoSans
+  font-family: GeoSans;
+  /* On fait ça pour garder la bande div blanche sans bord */
+  margin:0;
+  padding: 0;
 }
 
 #store_background {
   margin:auto;
   width:75%;
   background-color: #F8F9F9;
-  height:100%;
   /* Offset sur le côté, offset sur la hauteur, effet de flou, longeur de l'ombre
   et couleur de l'ombre, contient shadow-color, background-color, box-color et l'opacité
   Ici on omet volontairement la longueur de l'ombre et on en superpose deux */
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
 }
-
 .store_element {
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
-  width: 45%;
+  align-items: center;
+  max-height: 100%;
+  min-width: 200px;
+  max-width:32%;
   margin:auto;
   margin-top:10px;
   margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 5px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s ease-out;
@@ -48,22 +50,24 @@ body {
 
 .store_side_element {
   display: flex;
+  min-width: 200px;
   flex-direction: column;
 }
 
+div .store_element > div:first-child {
+  width:100%;
+  min-width: 100px;
+  max-width:70%;
+}
+
 img {
-  max-height: 300px;
-  margin-left: 10px;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 100%;
+  height:auto;
   /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
 }
 
 .achat_bouton {
   background-color: yellow;
-  margin: 10px;
-  margin-left: 40px;
   padding: 10px;
   margin-bottom: 20px;
   text-align: center;
@@ -79,10 +83,8 @@ img {
 
 .store_item_title {
   font-size:20px;
-  font-style: bold;
-  height:20px;
   text-align: center;
-  margin-left: auto;
+  font-weight: bold;
 }
 
 .store_description {
