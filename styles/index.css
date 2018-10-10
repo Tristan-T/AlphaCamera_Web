@@ -1,1 +1,58 @@
+.parallax {
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 72vh;
+}
 
+.textbetween {
+	background-color: #f8f7f7;
+	width : 100%;
+	text-align: center;
+}
+
+#txt1 {
+	color: #060606;
+	height: 25%;
+	font-size: 150px;
+}
+
+#txt2 {
+	color: #060606;
+	height: 1000px;
+	font-size: 100px;
+	box-shadow: 10px 10px 10px 10px #060606;
+}
+
+#parallax1 {
+	background-image: url(../images/parallax3-1.jpg);
+	display: flex;
+	align-items: stretch;
+}
+
+#parallax1 > div{
+	display: flex;
+	justify-content: evenly-spaced;
+	flex-direction: column;
+	margin: auto auto 40px auto;
+}
+
+#parallax1 #span1{
+	text-align: center;
+	position: relative;
+	font-size: 200px;
+	color: #f8f7f7;
+}
+
+#parallax1 #span2{
+	text-align: center;
+	position: relative;
+	font-size: 50px;
+	color: #f8f7f7;
+	line-height: 200px
+}
+
+#parallax2 {
+	background-image: url(../images/parallax5-1.jpg);
+}
