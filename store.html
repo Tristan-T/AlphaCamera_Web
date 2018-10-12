@@ -4,13 +4,38 @@
 <head>
   <!-- On ajoute les différents styles, l'icone de la page, le nom et on déclare l'encodage -->
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/general.css"/>
   <link rel="stylesheet" type="text/css" href="styles/store_style.css"/>
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.jpg" />
   <title>AlphaCamera - Store </title>
 </head>
 
 <body>
+
+<header>
+  <nav>
+    <!-- Accueil / Galerie / Store / Presse / Equipe / Nous rejoindre / Contact / FAQ-->
+    <div>
+      <a href="./index.html">Accueil</a>
+    </div>
+    <div>
+      <a href="./galerie.html">Galerie</a>
+    </div>
+    <div>
+      <a href="./store.html">Store</a>
+    </div>
+    <div id="hovercontact">
+      <a href="./contact.html" id="contactpos">Contact</a>
+      <div id="dropdownmenugeneral">
+        <a href="./presse.html">Presse</a>
+        <a href="./equipe.html">Equipe</a>
+        <a href="./nous_rejoindre.html">Nous rejoindre</a>
+        <a href="./faq.html">Foire aux questions</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <div id="store_background">
   <div id="store_titre">
     <h3> Bienvenue sur le store ! </h3>
@@ -35,7 +60,7 @@
     <div class="store_side_element">
       <p class="store_item_title"> Alpha Camera MKI </p>
       <p class="store_description"> Where it all began, <strong> now at a reduced price </strong> </p>
-      <p class="prix"> <s class="store_price_old"> 599;99€ </s> 499,99€ </p>
+      <p class="prix"> <s class="store_price_old"> 599;99€ </s> &nbsp;499,99€ </p>
     </div>
     <a href="achat.html"><div class="achat_bouton"> Voir le produit</div> </a>
   </div>
@@ -48,6 +73,18 @@
       <p class="store_item_title"> Alpha Camera MKII Plus </p>
       <p class="store_description"> Our greatest and latest model </p>
       <p class="prix"> 699,99€ </p>
+    </div>
+    <a href="achat.html"><div class="achat_bouton"> Voir le produit</div> </a>
+  </div>
+
+  <div class="store_element">
+    <div>
+      <img src="./images/camera3.jpg" alt="Image d'une caméra à acheter"/>
+    </div>
+    <div class="store_side_element">
+      <p class="store_item_title"> Alpha Camera BioEye&trade; </p>
+      <p class="store_description"> The pinnacle of biomechanical engineering </p>
+      <p class="prix"> 999,99€ </p>
     </div>
     <a href="achat.html"><div class="achat_bouton"> Voir le produit</div> </a>
   </div>

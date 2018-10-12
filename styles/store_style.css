@@ -9,13 +9,11 @@ body {
   background-attachment: fixed;
   background-size: 100%;
   font-family: GeoSans;
-  /* On fait ça pour garder la bande div blanche sans bord */
-  margin:0;
-  padding: 0;
 }
 
 #store_background {
   margin:auto;
+  margin-top:20px;
   width:75%;
   background-color: #F8F9F9;
   /* Offset sur le côté, offset sur la hauteur, effet de flou, longeur de l'ombre
@@ -46,6 +44,7 @@ body {
 
 .store_element:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.03);t
 }
 
 .store_side_element {
@@ -61,7 +60,7 @@ div .store_element > div:first-child {
 }
 
 img {
-  width: 100%;
+  width: 100% ;
   height:auto;
   /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
 }
@@ -105,11 +104,21 @@ img {
 
 .prix {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .store_price_old {
   font-size: 15px;
   color:red;
+}
+
+a {
+  text-decoration:none;
+  color:hotpink;
+}
+
+a:hover {
+  text-decoration: bold;
+  color:black;
 }
