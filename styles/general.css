@@ -25,7 +25,7 @@ nav {
 }
 
 nav > div a{
-	/*background-color: pink;*/
+	/*background-color: pink; TEST*/
 	text-decoration: none;
 	color: #060606;
 }
@@ -35,10 +35,42 @@ nav > div a:hover{
 }
 
 nav div {
-	/*background-color: blue;*/
+	/*background-color: blue; TEST*/
 	height: 90px;
 	display: flex;
 	align-items: center;
+}
+
+#downarrowcontact {
+	color: #060606;
+	font-size: 60%;
+	opacity: 0.85;
+	transition: all 0.2s ease-in-out;
+	transform: rotate(-90deg);
+	position: relative;
+	left: 7px;
+	top: 4px;
+}
+
+#addresslogo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#logomenu {
+	height: 70px;
+	opacity: 0.90;
+}
+
+#boxshadowonly {
+	position: absolute;
+	top: 0px;
+	box-shadow: 0px 0px 20px 0px #060606;
+	height: 90px;
+	width: 100%;
+	background-color: blue;
+	z-index: -4;
 }
 
 #contactpos {
@@ -47,21 +79,95 @@ nav div {
 
 #hovercontact:hover #dropdownmenugeneral {
 	visibility: visible;
+	transform: translateY(0px);
+	opacity: 1;
+	animation-name: zindexmenu;
+    animation-duration: 1ms;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+#hovercontact:hover #boxshadowdropdown {
+	visibility: visible;
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+#hovercontact:hover #downarrowcontact {
+	transform: rotate(0deg);
+}
+
+#boxshadowdropdown {
+	transform: translateY(-100%);
+	visibility: hidden;
+	background-color: transparent;
+	position: absolute;
+	top: 90px;
+	height: 270px;
+	padding: 0px 20px;
+	width: 15.52vw;
+	margin-left: -20px;
+	box-shadow: 0px 0px 20px 0px #060606;
+	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
+	z-index: -4;
 }
 
 #dropdownmenugeneral {
 	visibility: hidden;
 	position: absolute;
-	top: 90px;
 	display: flex;
 	flex-direction: column;
-	z-index: 18000;
+	background-color: #f8f7f7;
+	top: 90px;
+	height: 270px;
+	padding: 0px 20px;
+	margin-left: -20px;
+	z-index: -1;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
 }
 
 #dropdownmenugeneral a {
-	background-color: #f8f7f7;
+	/*background-color: violet; TEST*/
 	text-align: left;
-	padding: 20px;
-	margin-left: -40px;
+	height: 90px;
 	width: 100%;
+}
+
+@keyframes zindexmenu {
+	to {z-index: 1}
+}
+
+@media(max-width: 1275px){
+	#dropdownmenugeneral {
+		height: 305px;
+	}
+	#boxshadowdropdown {
+		height: 305px;
+		width: 276.625px;
+	}
+	#dropdownmenugeneral .margintopless {
+		margin-top: -25px;
+	}
+}
+
+@media(max-width: 1066px){
+	#dropdownmenugeneral {
+		height: 345px;
+	}
+	#boxshadowdropdown {
+		height: 345px;
+		width: 231px;
+	}
+	#dropdownmenugeneral #faqmarginresponsive {
+		margin-top: 15px;
+	}
+	#logomenu {
+		height: 50px;
+	}
+	#addresslogo{
+		top: 20px;
+		left: 20px;
+	}
 }

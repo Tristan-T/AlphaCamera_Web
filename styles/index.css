@@ -3,49 +3,77 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 72vh;
 }
 
 .textbetween {
 	background-color: #f8f7f7;
 	width : 100%;
 	text-align: center;
+	z-index: 500;
 }
 
 #txt1 {
 	color: #060606;
 	height: 25%;
-	font-size: 150px;
+	font-size: 100px;
+	box-shadow: 0px 0px 20px 0px #060606;
+}
+
+#txt1 > div {
+	padding: 30px;
+}
+
+#txt1petit {
+	font-size: 50px;
+	width: 75%;
+	margin: auto;
 }
 
 #txt2 {
 	color: #060606;
+	height: 100%;
+	font-size: 100px;
+	box-shadow: 0px 0px 20px 0px #060606;
+}
+
+#txt2techdescribe {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: space-evenly;
+	margin-top: 25vh;
+}
+
+#txt3 {
+	color: #060606;
 	height: 1000px;
 	font-size: 100px;
-	box-shadow: 10px 10px 10px 10px #060606;
+	box-shadow: 0px 0px 20px 0px #060606;
 }
 
 #parallax1 {
 	background-image: url(../images/parallax3-1.jpg);
 	display: flex;
 	align-items: stretch;
+	position: relative;
+	z-index: -300;
+	height: 74vh;
 }
 
 #parallax1 > div{
 	display: flex;
-	justify-content: evenly-spaced;
 	flex-direction: column;
 	margin: auto auto 40px auto;
 }
 
-#parallax1 #span1{
+#parallax1 #span11{
 	text-align: center;
 	position: relative;
 	font-size: 200px;
 	color: #f8f7f7;
 }
 
-#parallax1 #span2{
+#parallax1 #span12{
 	text-align: center;
 	position: relative;
 	font-size: 50px;
@@ -55,4 +83,18 @@
 
 #parallax2 {
 	background-image: url(../images/parallax5-1.jpg);
+	position: relative;
+	z-index: -300;
+	height: 20vh;
+}
+
+#parallax2 > div{
+	display: flex;
+	flex-direction: column;
+	margin: auto auto;
+}
+
+#alphacameramkimage {
+	height: 40%;
+	width: 40%;
 }

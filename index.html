@@ -4,60 +4,69 @@
 
 	<head>
 		<title>AlphaCamera</title>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="./styles/general.css">
 		<link rel="stylesheet" type="text/css" href="./styles/index.css">
 	</head>
 
 	<body>
 		<header>
+			<a href="./index.html" id="addresslogo"><img src="./images/ac-logo.png" alt="Logo d'AlphaCamera" id="logomenu"></a>
 			<nav>
 			<!-- Accueil / Galerie / Store / Presse / Equipe / Nous rejoindre / Contact / FAQ-->
-			
 				<div>
 					<a href="./index.html">Accueil</a>
-				</div>
-				
+				</div>			
 				<div>
 					<a href="./galerie.html">Galerie</a>
-				</div>
-				
+				</div>			
 				<div>
 					<a href="./store.html">Store</a>
 				</div>
-				
 				<div id="hovercontact">
-					<a href="./contact.html" id="contactpos">Contact</a>
-					
+					<a href="./contact.html" id="contactpos">Contact  </a> <div id="downarrowcontact">&#x25BC;</div>
+					<div id="boxshadowdropdown"></div>
 					<div id="dropdownmenugeneral">
-						
-							<a href="./presse.html">Presse</a>
-						
-							<a href="./equipe.html">Equipe</a>
-						
-							<a href="./nous_rejoindre.html">Nous rejoindre</a>
-						
-							<a href="./faq.html">Foire aux questions</a>
-						
+						<a href="./presse.html">Presse</a>
+						<a href="./equipe.html" class="margintopless">Equipe</a>
+						<a href="./nous_rejoindre.html" class="margintopless">Nous rejoindre</a>
+						<a href="./faq.html"class="margintopless" id="faqmarginresponsive">Foire aux questions</a>
 					</div>
 				</div>
-				
 			</nav>
+			<div id="boxshadowonly"></div>
 		</header>
 		
 		<main>
 		<div class="parallax" id="parallax1">
 			<div>
-				<span id="span1">αCamera</span>
-				<span id="span2">Leading Innovation</span>
+				<span id="span11">αCamera</span>
+				<span id="span12">Leading Innovation</span>
 			</div>
 		</div>
 		<div class="textbetween" id="txt1">
-			Bite du texte
+			<div>
+			Découvrez les technologies
+			<br>
+			révolutionnaires AlphaCamera
+			</div>
+			<div id="txt1petit">
+			Grâce à deux décénies de recherche et développement, nos chercheurs sont fiers de vous présenter les nombreuses technologies qui font d'AlphaCamera le leader du marché.
+			</div>
 		</div>
 		<div class="parallax" id="parallax2"></div>
-		<div class="textbetween" id="txt2">
-			Texte trop classe
+		<div class="textbetween" id="txt2">	
+			<div>
+				Des images plus détaillées que jamais
+			</div>
+			<div>
+				Technologie BioEYE&copy;
+			</div>
+			<div id="txt2techdescribe">
+				<img src="./images/ac-cam.png" alt="AlphaCamera Mk, l'appareil révolutionnaire" id="alphacameramkimage">
+				<div> placeholder describe tech</div>
+			</div>
 		</div>
 		</main>
 		
