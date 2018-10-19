@@ -16,7 +16,7 @@ body {
 nav {
 	background-color: #f8f7f7;
 	text-decoration: bold;
-	font-size: 250%;
+	font-size: 3vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -50,6 +50,7 @@ nav div {
 	position: relative;
 	left: 7px;
 	top: 4px;
+	height: 4vw;
 }
 
 #addresslogo{
@@ -103,9 +104,9 @@ nav div {
 	background-color: transparent;
 	position: absolute;
 	top: 90px;
-	height: 270px;
 	padding: 0px 20px;
-	width: 15.52vw;
+	width: 20vw;
+	height: 30vh;
 	margin-left: -20px;
 	box-shadow: 0px 0px 20px 0px #060606;
 	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
@@ -117,22 +118,28 @@ nav div {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
 	background-color: #f8f7f7;
 	top: 90px;
-	height: 270px;
 	padding: 0px 20px;
+	width: 20vw;
+	height: 30vh;
 	margin-left: -20px;
+	font-size: 2.5vw;
 	z-index: -1;
 	transform: translateY(-100%);
 	opacity: 0;
 	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
 }
 
-#dropdownmenugeneral a {
-	/*background-color: violet; TEST*/
+#dropdownmenugeneral div {	
 	text-align: left;
 	height: 90px;
 	width: 100%;
+}
+
+.borderbottommenu {
+	border-bottom: 0.1px solid #101010;
 }
 
 @keyframes zindexmenu {
@@ -140,28 +147,35 @@ nav div {
 }
 
 @media(max-width: 1275px){
+	nav {
+		font-size: 4vw;
+	}
 	#dropdownmenugeneral {
-		height: 305px;
+		height: 32vh;
+		width: 20vw;
+		font-size: 3vw;
+		line-height: 3vh;
 	}
 	#boxshadowdropdown {
-		height: 305px;
-		width: 276.625px;
+		height: 32vh;
+		width: 20vw;
 	}
-	#dropdownmenugeneral .margintopless {
-		margin-top: -25px;
+	#dropdownmenugeneral div {
+		height: 7vh;
 	}
+	.margintopless {
+		margin-top: -1.5vh;
 }
 
-@media(max-width: 1066px){
-	#dropdownmenugeneral {
-		height: 345px;
-	}
+@media(max-width: 1150px){
 	#boxshadowdropdown {
-		height: 345px;
-		width: 231px;
+		height: 27vh
 	}
-	#dropdownmenugeneral #faqmarginresponsive {
-		margin-top: 15px;
+	#dropdownmenugeneral {
+		height: 27vh;
+	}
+	.margintopless {
+		margin-top: -1vh;
 	}
 	#logomenu {
 		height: 50px;
@@ -169,5 +183,23 @@ nav div {
 	#addresslogo{
 		top: 20px;
 		left: 20px;
+	}
+}
+
+@media(max-width: 468px){
+	nav {
+		font-size: 7vw;
+	}
+	#dropdownmenugeneral {
+		width: 20vw;
+	}
+	#boxshadowdropdown {
+		width: 20vw;
+	}
+	#addresslogo{
+		display: none;
+	}
+	#dropdownmenugeneral a {
+		font-size: 5vw;
 	}
 }

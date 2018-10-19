@@ -15,7 +15,7 @@
 #txt1 {
 	color: #060606;
 	height: 25%;
-	font-size: 100px;
+	font-size: 4vw;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
@@ -24,7 +24,7 @@
 }
 
 #txt1petit {
-	font-size: 50px;
+	font-size: 2.5vw;
 	width: 75%;
 	margin: auto;
 }
@@ -32,7 +32,7 @@
 #txt2 {
 	color: #060606;
 	height: 100%;
-	font-size: 100px;
+	font-size: 3vw;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
@@ -40,14 +40,19 @@
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	justify-content: space-evenly;
-	margin-top: 25vh;
+	align-content: flex-start;
+	margin-top: 10vh;
+}
+
+#bioeyetitle {
+	padding: 30px;
+	font-size: 7vw;
 }
 
 #txt3 {
 	color: #060606;
 	height: 1000px;
-	font-size: 100px;
+	font-size: 3vw;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
@@ -69,14 +74,14 @@
 #parallax1 #span11{
 	text-align: center;
 	position: relative;
-	font-size: 200px;
+	font-size: 12vw;
 	color: #f8f7f7;
 }
 
 #parallax1 #span12{
 	text-align: center;
 	position: relative;
-	font-size: 50px;
+	font-size: 2.5vw;
 	color: #f8f7f7;
 	line-height: 200px
 }
@@ -95,6 +100,46 @@
 }
 
 #alphacameramkimage {
-	height: 40%;
-	width: 40%;
+	height: 30%;
+	width: 30%;
+	
+}
+
+#mkselection {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow: hidden;
+	position: relative;
+	width: 100vh; 
+}
+
+.tab [type=radio] {
+	display: none;
+}
+
+.tab label {
+	background-color: #56647a;
+	color: #f8f7f7;
+	height: 3vh;
+	padding: 2vh;
+	font-size: 2vw;
+}
+
+.contentmkselect {
+	background-color: #929eb2;
+	color: #f8f7f7;
+	font-size: 3vw;
+	height: 30vh;
+	position: absolute;
+	top: 8vh;
+	left: 0;
+}
+
+[type=radio]:checked ~ label {
+  background: #929eb2;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .contentmkselect {
+  z-index: 1;
 }
