@@ -1,14 +1,9 @@
-@font-face {
-    font-family: GeoSans;
-    src: url("../assets/GeosansLight.ttf");
-}
-
 body {
-  background-image: url("../images/background-pine.jpg");
+  background-image: url("../images/background-forest.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
-  font-family: GeoSans;
+  background-position: bottom;
+  background-size: cover;
 }
 
 #store_background {
@@ -65,9 +60,9 @@ img {
   /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
 }
 
-.achat_bouton {
-  background-color: yellow;
-  padding: 10px;
+.store_bouton {
+  background-color: #36ae85;
+  padding: 1vh;
   margin-bottom: 20px;
   text-align: center;
   transition: transform .2s;
@@ -75,10 +70,10 @@ img {
   width:200px;
 }
 
-.achat_bouton:hover {
+.store_bouton:hover {
   transform:scale(1.1);
   transition: transform .4s;
-  box-shadow: inset 0px 0px 20px 0px rgba(255,255,255,0.75);
+  box-shadow: inset 0px 0px 10px 0px rgba(0,128,0,0.75);
 }
 
 .store_item_title {
@@ -115,10 +110,10 @@ img {
 
 a {
   text-decoration:none;
-  color:hotpink;
+  color:white;
 }
 
 a:hover {
   text-decoration: bold;
-  color:black;
+  color:white;
 }

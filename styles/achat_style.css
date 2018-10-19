@@ -1,0 +1,81 @@
+body {
+  background-image: url("../images/background-sea.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#achat_background {
+  margin:auto;
+  margin-top:20px;
+  width:80%;
+  background-color: #F8F9F9;
+  /* Offset sur le côté, offset sur la hauteur, effet de flou, longeur de l'ombre
+  et couleur de l'ombre, contient shadow-color, background-color, box-color et l'opacité
+  Ici on omet volontairement la longueur de l'ombre et on en superpose deux */
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+#achat_top {
+  display: flex;
+  display: row;
+}
+
+#achat_side_element {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-right:20px;
+}
+
+div #achat_top > div > div > img {
+  max-width: 40vw ;
+  height: auto;
+  padding:20px;
+}
+
+.achat_bouton {
+  background-color: #36ae85;
+  padding: 3% 5% 3% 5%;
+  text-align: center;
+  transition: transform .2s;
+  margin:2vh;
+}
+
+.achat_bouton:hover {
+  transform:scale(1.1);
+  transition: transform .2s;
+}
+
+div #achat_achat > div {
+  font-size: 5vh;
+  text-align: center;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 6vh;
+  text-align: center;
+}
+
+#achat_middle {
+  width:100%;
+}
+
+div #achat_middle > div {
+  width:100%;
+}
+
+#achat_list {
+  font-size: 4vh;
+  font-weight: normal;
+}
+
+.achat_desc_img {
+  width:100%;
+}
