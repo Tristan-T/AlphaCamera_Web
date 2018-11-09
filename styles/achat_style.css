@@ -115,3 +115,13 @@ a {
   color:white;
   text-decoration: none;
 }
+
+#achat_thumbnail {
+  display: flex;
+  flex-direction: row;
+
+}
+
+div .achat_thumbnail {
+  max-width: 100px;
+}
