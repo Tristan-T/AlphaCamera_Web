@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>AlphaCamera Contact</title>		
+		<link rel="stylesheet" type="text/css" href="./styles/general.css">
+		<link rel="stylesheet" type="text/css" href="./styles/contact.css">
+		
+			
+	</head>
+	
+	<body id="retour_debut">
+		
+		<header>
+			
+			<nav>
+				
+				<a href="">.....</a> <!--Pyves   -->
+				<a href="">.....</a>
+				
+				
+			</nav>
+			
+		</header>
+		
+		<main>
+			
+			<article>
+				
+				<div >
+					
+					<form action="sendToMySecondYearInIut.php" method="get">
+						
+						<h2>Information personnelles</h2>
+												
+							<fieldset>		
+										
+								<label for="surname">Nom *</label>  
+								<input id="surname" name="uname" type="text" placeholder="Nom" required>
+								<br>
+								<br>
+								<label for="firstname">Prénom</label>  
+								<input id="firstname" name="first_name" type="text" placeholder="Prenom">
+								<br>
+								<br>
+								<label for="email">Email *</label> 
+								<input id="email" name="e_mail" type="email" placeholder="yourmail@domain.com" required>
+								<br>
+								<br>
+								<label for="codepostal">Code postal</label>  
+								<input id="codepostal" name="code_postal" type="text" pattern="[0-9]{5}" placeholder="ex:34290">
+								<br>
+								<br>
+								<label for="pays_origine">Pays d'origine</label> 
+									
+									<select id="pays_origine">
+										
+										<option value="al">Allemagne</option>
+										<option value="agl">Angleterre</option>
+										<option value="au">Australie</option>
+										<option value="bh">Bhoutan</option>
+										<option value="ca">Centrafrique</option>
+										<option value="ch">Chine</option>
+										<option value="eg">Egypte</option>
+										<option value="egn">Espagne</option>
+										<option value="fr" selected>France</option>
+										<option value="it">Italie</option>
+										<option value="jp">Japon</option>
+										<option value="pr">Perou</option>
+										<option value="ru">Russie</option>
+										<option value="ss">Suisse</option>
+										<option value="usa">U.S.A</option>
+										<option value="vn">Viêt Nam</option>
+										
+									</select>	
+											
+							</fieldset>
+							<br>
+							
+						<h2>Retour</h2>	
+						
+							<fieldset>
+							
+								<label for="datecontact">A quelle date souhaitez-vous être recontacté ?</label> <!-- ip -->
+								<input id="datecontact" name="date_contact" type="date">
+							
+							</fieldset>
+							<br>
+							
+							
+						<h2>Commentaire</h2>	
+							
+							<fieldset>
+							
+								<label for="messagepour">Un petit message</label><br>
+								<textarea id="messagepour" name="textarea" rows="5" cols="50" placeholder="Donnez votre avis, vos suggestions, vos attentes... "></textarea> <!-- i -->
+								
+							</fieldset>
+						<div>
+							<input id="bouton_envoyer" type="submit" value="Envoyer">
+						</div>
+						<br>
+					</form>
+					
+				</div>
+				
+			</article>
+				
+			<aside>
+				
+			</aside>
+			
+		</main>
+		
+		<footer>
+			
+			<a id="fleche_retour" href="#retour_debut" ><img src="./assets/fleche.png" id="fleche" alt="flèche"></a>
+			
+		</footer>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,62 @@
+
+
+
+/*Corps */
+
+
+p {
+	text-align:center;
+	}
+
+body {
+	background-image: url("../images/paysage.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:bottom;
+}
+
+main {
+	background-color:white;
+	}
+	
+
+	
+
+#image1 {
+	
+	}
+
+
+/*-------------------------*/
+
+
+/*titres*/
+
+h2 {
+	}
+
+
+
+
+
+
+/*flèche retour   !!!!  css général  !!! */   
+
+#fleche {
+	height: 50px;
+	width: 50px;
+	border:3px solid #0d26e2 ;
+	
+}
+
+
+
+#fleche_retour {
+	position: fixed;
+	bottom: 3vh;
+	right: 3vh;
+}
+
+
+/*-----------------------------*/

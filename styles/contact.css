@@ -1,0 +1,65 @@
+
+
+/*Corps */
+
+
+	
+
+fieldset {
+	text-align: center;
+	}
+
+
+body {
+	background-image: url("../images/paysage.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:bottom;
+}
+
+main {
+	background-color: white;
+	margin: 5%
+	}
+	
+/*footer {
+	background-color: grey;
+	}*/
+
+#bouton_envoyer{
+	margin-left:50%;
+	
+	}
+
+/*---------------*/
+
+/*Titres*/
+
+h2 {
+	padding-left:5%;
+	
+}
+
+
+/*-------------------------------------*/
+
+/*flèche retour   !!!!  css général  !!! */   
+
+#fleche {
+	height: 50px;
+	width: 50px;
+	border:3px solid  #d6d8db ;
+	
+}
+
+
+
+#fleche_retour {
+	position: fixed;
+	bottom: 3vh;
+	right: 3vh;
+}
+
+
+/*-----------------------------*/
