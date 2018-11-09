@@ -1,9 +1,24 @@
+@keyframes fadeInUp{
+  0%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   background-image: url("../images/background-sea.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
+}
+
+h1,h2,h3,h4,a,span,li,ul {
+    animation:fadeInUp 2s;
 }
 
 #achat_background {
@@ -23,7 +38,7 @@ body {
 
 #achat_top {
   display: flex;
-  display: row;
+  flex-direction: row;
 }
 
 #achat_side_element {
@@ -33,8 +48,8 @@ body {
   margin-right:20px;
 }
 
-div #achat_top > div > div > img {
-  max-width: 40vw ;
+div #achat_top > div > img {
+  max-width: 30vw ;
   height: auto;
   padding:20px;
 }
@@ -44,7 +59,9 @@ div #achat_top > div > div > img {
   padding: 3% 5% 3% 5%;
   text-align: center;
   transition: transform .2s;
-  margin:2vh;
+  margin:2vw;
+  font-size:1vw;
+  border-bottom: 2px solid green;
 }
 
 .achat_bouton:hover {
@@ -53,13 +70,13 @@ div #achat_top > div > div > img {
 }
 
 div #achat_achat > div {
-  font-size: 5vh;
+  font-size: 3vw;
   text-align: center;
   font-weight: bolder;
 }
 
 h1 {
-  font-size: 6vh;
+  font-size: 4vw;
   text-align: center;
 }
 
@@ -72,10 +89,29 @@ div #achat_middle > div {
 }
 
 #achat_list {
-  font-size: 4vh;
+  font-size: 2vw;
   font-weight: normal;
 }
 
 .achat_desc_img {
   width:100%;
+}
+
+div #achat_middle > div {
+  font-size:0px;
+  position:relative;
+}
+
+.achat_texte_img {
+  font-size: 50px;
+  position:absolute;
+  color:white;
+  width:100%;
+  top:30%;
+  text-align: center;
+}
+
+a {
+  color:white;
+  text-decoration: none;
 }
