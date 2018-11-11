@@ -34,23 +34,13 @@ h1,h2,h3,h4,a,span,li,ul {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 1;
-}
-
-#achat_top {
-  display: flex;
-  flex-direction: row;
+  position: relative;
 }
 
 #achat_side_element {
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-right:20px;
-}
-
-div #achat_top > div > img {
-  max-width: 30vw ;
-  height: auto;
   padding:20px;
 }
 
@@ -65,7 +55,7 @@ div #achat_top > div > img {
 }
 
 .achat_bouton:hover {
-  transform:scale(1.1);
+  transform:scale3d(1.1, 1.1, 1);
   transition: transform .2s;
 }
 
@@ -97,6 +87,12 @@ div #achat_middle > div {
   width:100%;
 }
 
+.achat_texte_img img {
+  width:5%;
+  height:auto;
+  filter:invert(100%);
+}
+
 div #achat_middle > div {
   font-size:0px;
   position:relative;
@@ -108,7 +104,6 @@ div #achat_middle > div {
   color:white;
   width:100%;
   top:30%;
-  text-align: center;
 }
 
 a {
@@ -116,12 +111,51 @@ a {
   text-decoration: none;
 }
 
+#achat_top {
+  display: flex;
+  flex-direction: row;
+}
+
+#achat_photos {
+  display: flex;
+  flex-direction: column;
+  max-width:50%;
+}
+
+#achat_main_thumbnail img {
+  width:100%;
+}
+
 #achat_thumbnail {
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
 }
 
-div .achat_thumbnail {
-  max-width: 100px;
+#achat_thumbnail img {
+  align-self: start;
+  width: 30%;
+  margin: auto;
+  transition: transform .2s;
+}
+
+#achat_thumbnail img:hover {
+  transition-delay: 0.1s;
+  transform: scale3d(4, 4, 1);
+  z-index: 10000;
+}
+
+#achat_hover_text {
+  text-align: center;
+  padding: 1% 0% 1% 0%;
+}
+
+div #achat_middle > div:nth-child(odd) > div {
+  text-align: left;
+  padding-left:2%;
+}
+
+div #achat_middle > div:nth-child(even) > div{
+  text-align: right;
+  padding-right: 2%;
 }
