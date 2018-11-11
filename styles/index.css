@@ -31,7 +31,7 @@
 
 #txt2 {
 	color: #060606;
-	height: 100%;
+	height: 1000px;
 	font-size: 3vw;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
@@ -51,7 +51,7 @@
 
 #txt3 {
 	color: #060606;
-	height: 1000px;
+	height: 2000px;
 	font-size: 3vw;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
@@ -90,7 +90,7 @@
 	background-image: url(../images/parallax5-1.jpg);
 	position: relative;
 	z-index: -300;
-	height: 20vh;
+	height: 25vh;
 }
 
 #parallax2 > div{
@@ -99,10 +99,18 @@
 	margin: auto auto;
 }
 
+#parallax3 {
+	background-image: url(../images/parallax2.jpg);
+	position: relative;
+	z-index: -300;
+	height: 25vh;
+}
+
 #alphacameramkimage {
-	height: 30%;
-	width: 30%;
-	
+	height: 25%;
+	width: 25%;
+	position: relative;
+	left: 3vw;
 }
 
 #mkselection {
@@ -111,7 +119,8 @@
 	justify-content: flex-start;
 	overflow: hidden;
 	position: relative;
-	width: 100vh; 
+	width: 115vh;
+	left: 8vw;
 }
 
 .tab [type=radio] {
@@ -119,27 +128,66 @@
 }
 
 .tab label {
-	background-color: #56647a;
+	background-color: #4c4c4c;
 	color: #f8f7f7;
 	height: 3vh;
 	padding: 2vh;
 	font-size: 2vw;
 }
 
+.tab:first-child label {
+	background-color: #4c4c4c;
+	color: #f8f7f7;
+	height: 3vh;
+	padding: 2vh;
+	font-size: 2vw;
+	border-radius: 6px 0px 0px 0px;
+}
+
+.tab:last-child label {
+	background-color: #4c4c4c;
+	color: #f8f7f7;
+	height: 3vh;
+	padding: 2vh;
+	font-size: 2vw;
+	border-radius: 0px 6px 0px 0px;
+}
+
+.contentselectmktext {
+	font-size: 1.7vw;
+}
+
+.animationcontentmkselect {
+	transform : translateY(-10%);
+	transition: all 0.2s ease-out, opacity 0.2s ease-out;
+	opacity: 0
+}
+
 .contentmkselect {
-	background-color: #929eb2;
+	background-color: #5f5f5f;
 	color: #f8f7f7;
 	font-size: 3vw;
-	height: 30vh;
 	position: absolute;
 	top: 8vh;
 	left: 0;
+	padding: 40px;
+	visibility: hidden;
+	box-shadow: inset -4px -4px #56647a;
+	border-radius: 0px 6px 6px 6px;
 }
 
 [type=radio]:checked ~ label {
-  background: #929eb2;
-  z-index: 2;
+	background: #5f5f5f;
+	z-index: 2;
 }
-[type=radio]:checked ~ label ~ .contentmkselect {
-  z-index: 1;
+
+[type=radio]:checked ~ .contentmkselect {
+	visibility: visible;
+	z-index: 1;
 }
+
+[type=radio]:checked ~ .contentmkselect .animationcontentmkselect {
+	transform: translateY(0%);
+	opacity: 1;
+}
+
