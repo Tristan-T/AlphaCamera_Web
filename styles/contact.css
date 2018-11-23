@@ -7,6 +7,7 @@
 
 fieldset {
 	text-align: center;
+	
 	}
 
 
@@ -18,26 +19,41 @@ body {
 	background-position:bottom;
 }
 
+
 main {
 	background-color: white;
-	margin: 5%
+	margin: 5%;
+	border-radius:2%;
+	z-index:-1000;
 	}
+
 	
 /*footer {
 	background-color: grey;
 	}*/
 
+
 #bouton_envoyer{
 	margin-left:50%;
-	
+	border-radius:10%;	
 	}
-
+	
+	
+#toutformulair {
+	padding:2%;
+	}
 /*---------------*/
 
 /*Titres*/
 
+h1 {
+	text-align:center;
+	font-weight:bold;
+	}
+
 h2 {
 	padding-left:5%;
+	font-weight:2000;
 	
 }
 
@@ -49,7 +65,9 @@ h2 {
 #fleche {
 	height: 50px;
 	width: 50px;
-	border:3px solid  #d6d8db ;
+	border:3px solid  #969696;
+	background-color:  #d2d3d3;
+	border-radius:10%; 
 	
 }
 
@@ -63,3 +81,17 @@ h2 {
 
 
 /*-----------------------------*/
+
+/* bouton envoyer */
+
+#bouton_envoyer {
+	margin-top:2%;
+	padding:2%;
+	background-color: #b8d7dc ;
+	color:black;
+	}
+
+#attention {
+	text-align: center;
+	font-weight:bold;
+	} 

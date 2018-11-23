@@ -4,7 +4,7 @@
 /*Corps */
 
 
-p {
+div {
 	text-align:center;
 	}
 
@@ -17,11 +17,18 @@ body {
 }
 
 main {
+	z-index:-1000;
 	background-color:white;
+	margin:2%;
+	border-radius:2%;
+	}
+
+#toutgalerie {
+	padding:2%;
 	}
 	
 
-	
+/*Images */	
 
 #image1 {
 	
@@ -33,7 +40,7 @@ main {
 
 /*titres*/
 
-h2 {
+h1 {
 	}
 
 
@@ -46,7 +53,9 @@ h2 {
 #fleche {
 	height: 50px;
 	width: 50px;
-	border:3px solid #0d26e2 ;
+	border:3px solid  #969696;
+	background-color:  #d2d3d3;
+	border-radius:10%; 
 	
 }
 
