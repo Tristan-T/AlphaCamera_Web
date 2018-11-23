@@ -9,16 +9,34 @@
   }
 }
 
+@keyframes fadeInLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 body {
   background-image: url("../images/background-sea.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
-}
-
-h1,h2,h3,h4,a,span,li,ul {
-    animation:fadeInUp 2s;
 }
 
 #achat_background {
@@ -42,6 +60,7 @@ h1,h2,h3,h4,a,span,li,ul {
   flex-direction: column;
   margin: auto;
   padding:20px;
+  animation:fadeInUp 2s;
 }
 
 .achat_bouton {
@@ -88,7 +107,10 @@ div #achat_middle > div {
 }
 
 .achat_texte_img img {
-  width:5%;
+  width:10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height:auto;
   filter:invert(100%);
 }
@@ -102,7 +124,7 @@ div #achat_middle > div {
   font-size: 50px;
   position:absolute;
   color:white;
-  width:100%;
+  width:45%;
   top:30%;
 }
 
@@ -124,12 +146,12 @@ a {
 
 #achat_main_thumbnail img {
   width:100%;
+  padding: 2%;
 }
 
 #achat_thumbnail {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 #achat_thumbnail img {
@@ -152,10 +174,23 @@ a {
 
 div #achat_middle > div:nth-child(odd) > div {
   text-align: left;
-  padding-left:2%;
+  left:2%;
+  animation:fadeInLeft 4s;
 }
 
 div #achat_middle > div:nth-child(even) > div{
   text-align: right;
-  padding-right: 2%;
+  right: 2%;
+  animation:fadeInRight 4s;
+}
+
+.achat_sub_main_text {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.5vw;
+  font-weight: 900;
+}
+
+.achat_sub_sub_text {
+  font-size: 2vw;
 }
