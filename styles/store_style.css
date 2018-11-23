@@ -19,6 +19,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 1;
+  z-index: -1000;
 }
 .store_element {
   display:flex;
@@ -54,7 +55,7 @@ div .store_element > div:first-child {
   max-width:70%;
 }
 
-img {
+.store_element img {
   width: 100% ;
   height:auto;
   /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */

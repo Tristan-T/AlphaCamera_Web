@@ -164,7 +164,7 @@ a {
 #achat_thumbnail img:hover {
   transition-delay: 0.1s;
   transform: scale3d(4, 4, 1);
-  z-index: 10000;
+  z-index: 3000;
 }
 
 #achat_hover_text {

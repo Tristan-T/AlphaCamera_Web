@@ -9,197 +9,59 @@ html {
 }
 
 body {
-	margin: 0;
-	padding: 0;
+	margin:0;
 }
 
-nav {
-	background-color: #f8f7f7;
-	text-decoration: bold;
-	font-size: 3vw;
+#footer_div {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: stretch;
-	margin: 0;
+	width:100%;
+	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
-nav > div a{
-	/*background-color: pink; TEST*/
-	text-decoration: none;
-	color: #060606;
-}
-
-nav > div a:hover{
-	color: #f46464;
-}
-
-nav div {
-	/*background-color: blue; TEST*/
-	height: 90px;
-	display: flex;
+footer > div div {
+	flex-grow: 1;
 	align-items: center;
+	font-size: 1.2vw;
 }
 
-#downarrowcontact {
-	color: #060606;
-	font-size: 60%;
-	opacity: 0.85;
-	transition: all 0.2s ease-in-out;
-	transform: rotate(-90deg);
-	position: relative;
-	left: 7px;
-	top: 4px;
-	height: 4vw;
+footer div ul li a {
+	transition: color .3s;
 }
 
-#addresslogo{
-	position: absolute;
-	top: 10px;
-	left: 10px;
+footer div ul li a:hover {
+		color:red;
 }
 
-#logomenu {
-	height: 70px;
-	opacity: 0.90;
+footer {
+	color:white;
+	margin-top:200px;
+	height:200px;
+	background-color: rgb(8,8,8);
+	padding:20px;
+	padding-bottom: 10%;
 }
 
-#boxshadowonly {
-	position: absolute;
-	top: 0px;
-	box-shadow: 0px 0px 20px 0px #060606;
-	height: 90px;
-	width: 100%;
-	background-color: blue;
-	z-index: -4;
+#copyright {
+	position:block;
 }
 
-#contactpos {
-	position: relative;
+#copyright {
+	text-align: right;
 }
 
-#hovercontact:hover #dropdownmenugeneral {
-	visibility: visible;
-	transform: translateY(0px);
-	opacity: 1;
-	animation-name: zindexmenu;
-    animation-duration: 1ms;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
+#footer_legal {
+	overflow-wrap: break-word;
+	max-width: 30vw;
+	font-size: 1vw;
 }
 
-#hovercontact:hover #boxshadowdropdown {
-	visibility: visible;
-	transform: translateY(0px);
-	opacity: 1;
+.footer_photos {
+	width:3vw;
+	padding-right: 1vw;
 }
 
-#hovercontact:hover #downarrowcontact {
-	transform: rotate(0deg);
-}
-
-#boxshadowdropdown {
-	transform: translateY(-100%);
-	visibility: hidden;
-	background-color: transparent;
-	position: absolute;
-	top: 90px;
-	padding: 0px 20px;
-	width: 20vw;
-	height: 30vh;
-	margin-left: -20px;
-	box-shadow: 0px 0px 20px 0px #060606;
-	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
-	z-index: -4;
-}
-
-#dropdownmenugeneral {
-	visibility: hidden;
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	background-color: #f8f7f7;
-	top: 90px;
-	padding: 0px 20px;
-	width: 20vw;
-	height: 30vh;
-	margin-left: -20px;
-	font-size: 2.5vw;
-	z-index: -1;
-	transform: translateY(-100%);
-	opacity: 0;
-	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
-}
-
-#dropdownmenugeneral div {	
-	text-align: left;
-	height: 90px;
-	width: 100%;
-}
-
-.borderbottommenu {
-	border-bottom: 0.1px solid #101010;
-}
-
-@keyframes zindexmenu {
-	to {z-index: 1}
-}
-
-@media(max-width: 1275px){
-	nav {
-		font-size: 4vw;
-	}
-	#dropdownmenugeneral {
-		height: 32vh;
-		width: 20vw;
-		font-size: 3vw;
-		line-height: 3vh;
-	}
-	#boxshadowdropdown {
-		height: 32vh;
-		width: 20vw;
-	}
-	#dropdownmenugeneral div {
-		height: 7vh;
-	}
-	.margintopless {
-		margin-top: -1.5vh;
-}
-
-@media(max-width: 1150px){
-	#boxshadowdropdown {
-		height: 27vh
-	}
-	#dropdownmenugeneral {
-		height: 27vh;
-	}
-	.margintopless {
-		margin-top: -1vh;
-	}
-	#logomenu {
-		height: 50px;
-	}
-	#addresslogo{
-		top: 20px;
-		left: 20px;
-	}
-}
-
-@media(max-width: 468px){
-	nav {
-		font-size: 7vw;
-	}
-	#dropdownmenugeneral {
-		width: 20vw;
-	}
-	#boxshadowdropdown {
-		width: 20vw;
-	}
-	#addresslogo{
-		display: none;
-	}
-	#dropdownmenugeneral a {
-		font-size: 5vw;
-	}
+footer > h1 {
+	font-size: 2wv;
 }
