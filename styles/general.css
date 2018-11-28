@@ -23,7 +23,10 @@ body {
 footer > div div {
 	flex-grow: 1;
 	align-items: center;
-	font-size: 1.2vw;
+	font-size: 1.1vw;
+	display: inline-block;
+	margin-left: 1vw;
+	width: calc(25% - 3vw);
 }
 
 footer div ul li a {
@@ -37,31 +40,37 @@ footer div ul li a:hover {
 footer {
 	color:white;
 	margin-top:200px;
-	height:200px;
 	background-color: rgb(8,8,8);
-	padding:20px;
-	padding-bottom: 10%;
+	width:100%;
 }
 
 #copyright {
-	position:block;
+	bottom: 2%;
+	right: 1%;
+	font-size: 1.1vw;
 }
 
 #copyright {
 	text-align: right;
+	margin-right: 2%;
+	margin-bottom: 1%;
+}
+
+#li_footer_legal {
+	overflow-wrap: break-word;
+	max-width: 30vw;
 }
 
 #footer_legal {
-	overflow-wrap: break-word;
-	max-width: 30vw;
 	font-size: 1vw;
 }
 
 .footer_photos {
-	width:3vw;
-	padding-right: 1vw;
+	width:2vw;
+	margin-right: 1vw;
+	margin-left: 1vw;
 }
 
-footer > h1 {
-	font-size: 2wv;
+footer h1 {
+	font-size: 2vw;
 }
