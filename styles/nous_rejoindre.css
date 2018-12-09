@@ -1,0 +1,52 @@
+
+#bouton_envoyer{
+	border-radius: 10%;
+	background-color: #C7F3FB ;
+	color:black;
+}
+
+#bouton{
+	margin-top:2%;
+	padding-bottom:3%;
+	
+}
+
+ul {
+	padding-left:20%;
+	}
+
+.liste_emploi {
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+}
+
+.cv{
+	text-align:center;
+}
+	
+h2{
+	padding-left:5%;
+}
+
+h1{
+	font-size: 200%;
+	text-align: center;
+	padding-top:2%; 
+}
+
+main {
+	/*text-align:center;*/
+	background-color: white;
+	margin: 5%;
+	border-radius:2%;
+	z-index:-1000;
+}
+	
+body {
+	background-image: url("../images/paysage.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:bottom;
+}

@@ -28,16 +28,12 @@ main {
 	}
 
 	
-/*footer {
-	background-color: grey;
-	}*/
+span{
+	color:red;
+}
 
 
-#bouton_envoyer{
-	margin-left:50%;
-	border-radius:10%;	
-	}
-	
+
 	
 #toutformulair {
 	padding:2%;
@@ -84,11 +80,20 @@ h2 {
 
 /* bouton envoyer */
 
+
+#bouton{
+	text-align:center;
+}
+	
+
+
 #bouton_envoyer {
 	margin-top:2%;
-	padding:2%;
-	background-color: #b8d7dc ;
+	border-radius:10%;
+	padding:1%;
+	background-color: #C7F3FB ;
 	color:black;
+	
 	}
 
 #attention {

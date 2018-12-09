@@ -14,6 +14,7 @@
 		
 		<header>
 			<a href="./index.html" id="addresslogo"><img src="./images/ac-logo.png" alt="Logo d'AlphaCamera" id="logomenu"></a>
+			
 			<nav>
 			
 				<div>
@@ -53,23 +54,23 @@
 												
 							<fieldset>		
 										
-								<label for="surname">Nom *</label>  
+								<label for="surname">Nom <span>*</span></label>  
 								<input id="surname" name="uname" type="text" placeholder="Nom" required>
 								<br>
 								<br>
-								<label for="firstname">Prénom</label>  
+								<label for="firstname">Prénom <span>*</span></label>  
 								<input id="firstname" name="first_name" type="text" placeholder="Prenom">
 								<br>
 								<br>
-								<label for="email">Email *</label> 
+								<label for="email">Email <span>*</span></label> 
 								<input id="email" name="e_mail" type="email" placeholder="yourmail@domain.com" required>
 								<br>
 								<br>
-								<label for="codepostal">Code postal</label>  
+								<label for="codepostal">Code postal </label>  
 								<input id="codepostal" name="code_postal" type="text" pattern="[0-9]{5}" placeholder="ex:34290">
 								<br>
 								<br>
-								<label for="pays_origine">Pays d'origine</label> 
+								<label for="pays_origine">Pays d'origine <span>*</span></label> 
 									
 									<select id="pays_origine">
 										
@@ -115,7 +116,7 @@
 						
 							<fieldset>
 							
-								<label for="datecontact">A quelle date souhaitez-vous être recontacté ? *</label> <!-- ip -->
+								<label for="datecontact">A quelle date souhaitez-vous être recontacté ? <span>*</span></label> <!-- ip -->
 								<input id="datecontact" name="date_contact" type="date" required>
 							
 							</fieldset>
@@ -130,13 +131,13 @@
 								<textarea id="messagepour" name="textarea" rows="5" cols="50" placeholder="Donnez votre avis, vos suggestions, vos attentes... "></textarea> <!-- i -->
 								
 							</fieldset>
-						<div>
+						<div id="bouton">
 							<input id="bouton_envoyer" type="submit" value="Envoyer">
 						</div>
 						<br>
 					</form>
 					<div id="attention">
-						Les champs précédés de * sont obligatoires.
+						Les champs précédés de <span>*</span> sont obligatoires.
 					</div>
 				</div>
 				
