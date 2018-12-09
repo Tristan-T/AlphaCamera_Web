@@ -13,6 +13,10 @@ body {
 	padding: 0;
 }
 
+header {
+	z-index: 1000000;
+}
+
 nav {
 	background-color: #f8f7f7;
 	text-decoration: bold;
@@ -22,6 +26,8 @@ nav {
 	justify-content: space-evenly;
 	align-items: stretch;
 	margin: 0;
+	z-index: 1000;
+	box-shadow: 0px 0px 20px 0px #060606;
 }
 
 nav > div a{
@@ -64,33 +70,19 @@ nav div {
 	opacity: 0.90;
 }
 
-#boxshadowonly {
-	position: absolute;
-	top: 0px;
-	box-shadow: 0px 0px 20px 0px #060606;
-	height: 90px;
-	width: 100%;
-	background-color: blue;
-	z-index: -4;
-}
-
 #contactpos {
 	position: relative;
 }
 
 #hovercontact:hover #dropdownmenugeneral {
 	visibility: visible;
-	transform: translateY(0px);
+	transform: rotateX(0deg);
 	opacity: 1;
-	animation-name: zindexmenu;
-    animation-duration: 1ms;
-    animation-delay: 0.2s;
-    animation-fill-mode: forwards;
 }
 
 #hovercontact:hover #boxshadowdropdown {
 	visibility: visible;
-	transform: translateY(0px);
+	transform: rotateX(0);
 	opacity: 1;
 }
 
@@ -99,7 +91,7 @@ nav div {
 }
 
 #boxshadowdropdown {
-	transform: translateY(-100%);
+	transform: rotateX(90deg);
 	visibility: hidden;
 	background-color: transparent;
 	position: absolute;
@@ -110,7 +102,8 @@ nav div {
 	margin-left: -20px;
 	box-shadow: 0px 0px 20px 0px #060606;
 	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
-	z-index: -4;
+	clip-path: polygon(-20% 0, 120% 0, 120% 120%, -20% 120%);
+	transform-origin: top center;
 }
 
 #dropdownmenugeneral {
@@ -126,10 +119,10 @@ nav div {
 	height: 30vh;
 	margin-left: -20px;
 	font-size: 2.5vw;
-	z-index: -1;
-	transform: translateY(-100%);
+	transform: rotateX(90deg);
 	opacity: 0;
 	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
+	transform-origin: top center;
 }
 
 #dropdownmenugeneral div {	
@@ -140,10 +133,6 @@ nav div {
 
 .borderbottommenu {
 	border-bottom: 0.1px solid #101010;
-}
-
-@keyframes zindexmenu {
-	to {z-index: 1}
 }
 
 @media(max-width: 1275px){
@@ -169,20 +158,16 @@ nav div {
 
 @media(max-width: 1150px){
 	#boxshadowdropdown {
-		height: 27vh
+		height: 29vh
 	}
 	#dropdownmenugeneral {
-		height: 27vh;
+		height: 29vh;
 	}
 	.margintopless {
 		margin-top: -1vh;
 	}
-	#logomenu {
-		height: 50px;
-	}
 	#addresslogo{
-		top: 20px;
-		left: 20px;
+		display: none;
 	}
 }
 
