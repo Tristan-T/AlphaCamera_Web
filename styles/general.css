@@ -1,0 +1,259 @@
+@font-face {
+	font-family: Geolight;
+	src: url(../assets/GeosansLight.ttf);
+}
+
+html {
+	font-family: GeoLight, arial;
+	color: #060606;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	z-index: 1000000;
+}
+
+nav {
+	background-color: #f8f7f7;
+	text-decoration: bold;
+	font-size: 3vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: stretch;
+	margin: 0;
+	z-index: 1000;
+	box-shadow: 0px 0px 20px 0px #060606;
+}
+
+nav > div a{
+	/*background-color: pink; TEST*/
+	text-decoration: none;
+	color: #060606;
+}
+
+nav > div a:hover{
+	color: #f46464;
+}
+
+nav div {
+	/*background-color: blue; TEST*/
+	height: 90px;
+	display: flex;
+	align-items: center;
+}
+
+#downarrowcontact {
+	color: #060606;
+	font-size: 60%;
+	opacity: 0.85;
+	transition: all 0.2s ease-in-out;
+	transform: rotate(-90deg);
+	position: relative;
+	left: 7px;
+	top: 4px;
+	height: 4vw;
+}
+
+#addresslogo{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#logomenu {
+	height: 70px;
+	opacity: 0.90;
+}
+
+#contactpos {
+	position: relative;
+}
+
+#hovercontact:hover #dropdownmenugeneral {
+	visibility: visible;
+	transform: rotateX(0deg);
+	opacity: 1;
+}
+
+#hovercontact:hover #boxshadowdropdown {
+	visibility: visible;
+	transform: rotateX(0);
+	opacity: 1;
+}
+
+#hovercontact:hover #downarrowcontact {
+	transform: rotate(0deg);
+}
+
+#boxshadowdropdown {
+	transform: rotateX(90deg);
+	visibility: hidden;
+	background-color: transparent;
+	position: absolute;
+	top: 90px;
+	padding: 0px 20px;
+	width: 20vw;
+	height: 30vh;
+	margin-left: -20px;
+	box-shadow: 0px 0px 20px 0px #060606;
+	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
+	clip-path: polygon(-20% 0, 120% 0, 120% 120%, -20% 120%);
+	transform-origin: top center;
+}
+
+#dropdownmenugeneral {
+	visibility: hidden;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background-color: #f8f7f7;
+	top: 90px;
+	padding: 0px 20px;
+	width: 20vw;
+	height: 30vh;
+	margin-left: -20px;
+	font-size: 2.5vw;
+	transform: rotateX(90deg);
+	opacity: 0;
+	transition: transform 0.2s ease-out, opacity 0.15s ease-out;
+	transform-origin: top center;
+}
+
+#dropdownmenugeneral div {	
+	text-align: left;
+	height: 90px;
+	width: 100%;
+}
+
+.borderbottommenu {
+	border-bottom: 0.1px solid #101010;
+}
+
+
+footer a {
+  text-decoration:none;
+  color:white;
+}
+
+#footer_div {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+
+footer > div div {
+	flex-grow: 1;
+	align-items: center;
+	font-size: 1.1vw;
+	display: inline-block;
+	margin-left: 1vw;
+	width: calc(25% - 3vw);
+}
+
+footer div ul li a {
+	transition: color .3s;
+}
+
+footer div ul li a:hover {
+		color:red;
+}
+
+footer {
+	color:white;
+	margin-top:200px;
+	background-color: #080808;
+	width:100%;
+}
+
+#copyright {
+	bottom: 2%;
+	right: 1%;
+	font-size: 1.1vw;
+}
+
+#copyright {
+	text-align: right;
+	margin-right: 2%;
+	margin-bottom: 1%;
+}
+
+#li_footer_legal {
+	overflow-wrap: break-word;
+	max-width: 30vw;
+}
+
+#footer_legal {
+	font-size: 1vw;
+}
+
+.footer_photos {
+	width:2vw;
+	margin-right: 1vw;
+	margin-left: 1vw;
+}
+
+footer h1 {
+	font-size: 2vw;
+}
+
+@media(max-width: 1275px){
+	nav {
+		font-size: 4vw;
+	}
+	#dropdownmenugeneral {
+		height: 32vh;
+		width: 20vw;
+		font-size: 3vw;
+		line-height: 3vh;
+	}
+	#boxshadowdropdown {
+		height: 32vh;
+		width: 20vw;
+	}
+	#dropdownmenugeneral div {
+		height: 7vh;
+	}
+	.margintopless {
+		margin-top: -1.5vh;
+}
+
+@media(max-width: 1150px){
+	#boxshadowdropdown {
+		height: 29vh
+	}
+	#dropdownmenugeneral {
+		height: 29vh;
+	}
+	.margintopless {
+		margin-top: -1vh;
+	}
+	#addresslogo{
+		display: none;
+	}
+}
+
+@media(max-width: 468px){
+	nav {
+		font-size: 7vw;
+	}
+	#dropdownmenugeneral {
+		width: 20vw;
+	}
+	#boxshadowdropdown {
+		width: 20vw;
+	}
+	#addresslogo{
+		display: none;
+	}
+	#dropdownmenugeneral a {
+		font-size: 5vw;
+	}
+}
