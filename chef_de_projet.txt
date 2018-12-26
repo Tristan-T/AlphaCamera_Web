@@ -3,7 +3,7 @@
 	<head>
 		
 		<meta charset="utf-8">
-		<title>AlphaCamera Nous rejoindre -Designer-</title>		
+		<title>AlphaCamera Nous rejoindre -Chef de Projet-</title>		
 		<link rel="stylesheet" type="text/css" href="./styles/general.css">
 		<link rel="stylesheet" type="text/css" href="./styles/emploi.css">
 		
@@ -43,28 +43,24 @@
 			
 			<article>
 				<div>
-					<a href="./nous_rejoindre.html">Nous rejoindre</a><span> --></span> Designer
+					<a href="./nous_rejoindre.html">Nous rejoindre</a><span> --></span> Chef de Projet
 				</div>
 				<div>
-					<h2>Designer</h2>
+					<h2>Chef de Projet</h2>
 						<div>
-							Un designer est un praticien du design. Il conçoit des objets de toutes sortes (produits, lieux, messages) qui visent à « maintenir ou accroître l'habitabilité du monde ». Les métiers du design sont nombreux et ont tous vocation à réaliser des artefacts formant les environnements de l'activité humaine. Un designer est parfois spécialisé dans une discipline (design d'espace, design de produit, design graphique, ...) ou pluridisciplinaire (design signalétique, design de service, ...). Le travail du designer est souvent mené en collaboration avec d'autres disciplines, pour analyser les problématiques d'un projet et y apporter des solutions. 
+							Le secrétariat est un métier de bureau qui consiste à s'occuper, pour le compte d'un autre employé ou agent, de son courrier, de ses communications téléphoniques, de la rédaction des comptes rendus de réunions, de la gestion de son emploi du temps. Il allège de certaines activités notamment en contribuant à l'organisation de ses actions, etc.
+						
+						
+						</div>
+						<div id="bouton">
+							<input id="bouton_envoyer" type="submit" value="Je postule pour ce poste">
 						</div>
 				</div>
-				<div id="bouton">
-					<input id="bouton_envoyer" type="submit" value="Je postule pour ce poste">
-				</div>
-				
 			</article>
 		</main>
 		<footer>
+		
 		</footer>
-	</body>	
+		
+	</body>
 </html>
-			
-			
-			
-			
-			
-			
-			
