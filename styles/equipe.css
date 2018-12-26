@@ -1,0 +1,81 @@
+main {
+	margin: 5%;
+	padding: 3%;
+	background-color:white;
+	border-radius:2%;
+	z-index:-1000;
+}
+
+body {
+	background-image: url("../images/paysage.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:bottom;
+}
+
+h1{
+	font-size: 200%;
+	text-align: center;
+	padding-top:2%; 
+}
+
+#accroche{
+	text-align: center;
+	
+}
+
+.une_personne{
+	margin-bottom:5%;
+	margin-top:5%;
+}
+
+
+.photo{
+	width:15%;
+	height:25%;
+	border-radius:50%;
+	border: 2px solid #1f1f14;
+	
+}
+
+.nom_pair{
+	margin-left:5%;
+}
+
+.description_pair{
+	margin-right:20%;
+	text-align:	justify;
+	direction:left;
+	overflow:hidden;
+}
+
+.nom_impair{
+	margin-left:45%;
+}
+	
+
+.description_impair{
+	margin-left:20%;
+	text-align:	justify;
+	direction:left;
+	overflow:hidden;
+}
+
+.description_pair .photo{
+	float: right;
+	margin:	 5px 20px 5px 100px;
+}
+
+.description_impair .photo{
+	float: left;
+	margin: 5px 100px 5px 20px;
+}
+
+.description_pair .p{
+	overflow:hidden;
+}
+
+.description_impair .p{
+	overflow:hidden;
+}
