@@ -122,6 +122,7 @@ div.galerie_slider figcaption {
 	filter:invert(100%);
 	position: absolute;
 	right:10%;
+	top:10px;
 	pointer-events: none;
 	width:10%;
 	height:auto;
