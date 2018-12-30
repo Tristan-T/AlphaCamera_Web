@@ -12,14 +12,21 @@
 100% { left: 0%; }
 }
 
-body#galerie * {
-	margin:0;
+body {
+	background-image: url("../images/parallax4.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-size: cover;
 }
 
 div#galerie_meta {
-	width: 50vw;
+	width: 90%;
 	height:auto;
 	overflow: hidden;
+	background: black;
+	margin: auto;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 div.galerie_slider {
@@ -27,6 +34,10 @@ div.galerie_slider {
 	width: 500%;
   font-size: 0;
 	animation: 20s sliding infinite;
+}
+
+div.galerie_slider * {
+	margin:0;
 }
 
 div.galerie_slider figure {
@@ -40,10 +51,10 @@ div.galerie_slider img {
 	 width: 100%;
 	 height: auto;
 	 vertical-align: middle;
- }
+}
 
 
- div.galerie_slider figcaption {
+div.galerie_slider figcaption {
   position: absolute;
 	bottom: 5px;
 	right:10px;
@@ -51,4 +62,82 @@ div.galerie_slider img {
 	color: white;
   font-size: 20px;
 	text-align: right;
+}
+
+#galerie_titre {
+	text-align: center;
+	font-size: 600%;
+	font-weight: 900;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-top:5vh;
+}
+
+#galerie_page {
+	background: #F8F9F9;
+	width: 65%;
+	margin: auto;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+/* Partie thumbnail */
+
+.galerie_thumb {
+	width: 20vh;
+	height: 15vh; /*Adaptation en 4:3*/
+	border-radius: 2px;
+	margin-bottom : 10px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s ease-out;
+}
+
+.galerie_thumb:target {
+	height: auto;
+	width: 60vw;
+}
+
+.galerie_thumb:target+.galerie_close {
+	display: block;
+}
+
+.galerie_thumb:target+.galerie_close+.galerie_expand{
+	display: none;
+}
+
+.galerie_close {
+	filter:invert(100%); /* Eventuellement je changerais directement l'image en blanc*/
+  background-image: url("https://bit.ly/29QeT21");
+  background-repeat: no-repeat;
+	display: none;
+	position: absolute;
+	width:10px;
+	height:10px;
+	right:1%;
+	top:1%;
+	padding: 15px 15px 15px 15px;
+}
+
+.galerie_expand{
+	filter:invert(100%);
+	position: absolute;
+	right:10%;
+	pointer-events: none;
+	width:10%;
+	height:auto;
+}
+
+#galerie_mosaic {
+	width:90%;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+.galerie_thumb_wrapper {
+	position: relative;
+	flex: 0 0 33%;
 }
