@@ -1,79 +1,40 @@
 <!DOCTYPE html>
+<html lang="fr">
 
-<html>
+<head>
+  <!-- On ajoute les différents styles, l'icone de la page, le nom et on déclare l'encodage -->
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles/general.css"/>
+  <link rel="stylesheet" type="text/css" href="styles/galerie_style.css"/>
+  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+  <title>AlphaCamera - Galerie </title>
+</head>
 
-	<head>
-
-		<meta charset="utf-8">
-		<title>AlphaCamera Galerie</title>
-		<link rel="stylesheet" type="text/css" href="./styles/general.css">
-		<link rel="stylesheet" type="text/css" href="./styles/galerie.css">
-
-
-	</head>
-
-	<body id="retour_debut">
-
-		<main>
-
-			<article>
-
-				<div id="toutgalerie">
-
-					<h1>Quelques exemples de photos</h1>
-
-						<div class="intro">
-							Voici quelques photographies prises grâce à nos appariels. Vous pouvez observer la qualité des images qui est incroyable.
-						</div>
-
-						<div class="carrousel">
-
-							<input type="checkbox" class="nb_imag">
-							<div class="slide" slide="1" annot="slide 1">
-								<img src="./images/place.png" alt="Slide 1">
-							</div>
-
-							<input type="checkbox" class="nb_imag">
-							<div class="slide" slide="2" annot="slide 2">
-								<img src="./images/maison.png" alt="Slide 2" >
-							</div>
-
-							<input type="checkbox" class="nb_imag">
-							<div class="slide" slide="3" annot="slide 3">
-								<img src="./images/marché.png" alt="Slide 3">
-							</div>
-
-							<input type="checkbox" class="nb_imag">
-							<div class="slide" slide="4" annot="slide 4">
-								<img src="./images/biblio.png" alt="Slide 4">
-							</div>
-
-							<input type="checkbox" class="nb_imag">
-							<div class="slide" slide="5" annot="slide 5">
-								<img src="./images/ciel.jpeg" alt="Slide 5">
-							</div>
-
-							<div class="cpt" count="5"> / 5</div>
-
-
-						</div>
-
-
-				</div>
-
-			</article>
-
-			<aside>
-
-			</aside>
-		<br>
-		</main>
-
-		<footer>
-			<a id="fleche_retour" href="#retour_debut" ><img src="./assets/fleche.png" id="fleche" alt="flèche"></a>
-
-		</footer>
-
-	</body>
+<body id="galerie">
+ <div id="galerie_meta">
+	<div class="galerie_slider">
+		<figure>
+			<img src="./images/galerie-1.jpg" alt="Première image galerie">
+      <figcaption> Yosemite Mountains ©Noah Bradley </figcaption>
+		</figure>
+		<figure>
+			<img src="./images/galerie-2.jpg" alt="Seconde image galerie">
+      <figcaption> Iceland Sunset ©Noah Bradley </figcaption>
+		</figure>
+		<figure>
+			<img src="./images/galerie-3.jpg" alt="Troisième image galerie">
+      <figcaption> Caves ©Noah Bradley </figcaption>
+		</figure>
+		<figure>
+			<img src="./images/galerie-4.jpg" alt="Quatrième image galerie">
+      <figcaption> London lighting ©Noah Bradley </figcaption>
+		</figure>
+		<figure>
+			<img src="./images/galerie-5.jpg" alt="Cinquième image galerie">
+      <figcaption>  Bucharest ©Noah Bradley </figcaption>
+		</figure>
+	</div>
+</div>
+</body>
 
 </html>
