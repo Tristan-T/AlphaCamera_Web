@@ -139,5 +139,6 @@ div.galerie_slider figcaption {
 
 .galerie_thumb_wrapper {
 	position: relative;
-	flex: 0 0 33%;
+	flex: 0 0 15%;
+	margin:auto;
 }
