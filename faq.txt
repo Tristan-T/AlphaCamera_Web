@@ -1,0 +1,12 @@
+<div class="question"><a href="a1">Qu'est ce qu'AlphaCamera ?</a></div>
+<div class="question"><a href="a2">Combien de temps les produits AlphaCamera sont-ils garantis ?</a></div>
+<div class="question"><a href="a3">J'ai des questions ou un problème avec un produit AlphaCamera, que dois-je faire ?</a></div>
+<div class="question"><a href="a4">Quls équipements sont compatibles avec les produits AlphaCamera ?</a></div>
+<div class="question"><a href="a5"></a></div>
+<div class="question"><a href="a6"></a></div>
+<div class="answer" id="a1"> AlphaCamera est une entreprise fondée en 2015 par un groupe d'ingénieurs. Elle est depuis à la pointe de la technologie grâce à ses innovations telles que la technologie BioEye</div>
+<div class="answer" id="a2">Tous les produits AlphaCamera sont garantis pièces et main d'oeuvre à vie.</div>
+<div class="answer" id="a3">En cas de problème ou de question, nous vous invitons à vous rendre sur la page <a href="./contact.html">contact</a>.</div>
+<div class="answer" id="a4">Nous vous recommandons d'utiliser en priorité l'écosystème AlphaCamera, cependant nous tenons à inclure un support des standard, pour les trepieds par exemple. Les caractéristiques de nos appareils sont présentées sur leur page respective. En cas de doute, <a href="./contact.html">contactez-nous</a>.</div>
+<div class="answer" id="a5"></div>
+<div class="answer" id="a6"></div>
