@@ -1,181 +1,181 @@
-<!DOCTYPE html>
-<html lang="fr">
+  <!DOCTYPE html>
+  <html lang="fr">
 
-<head>
-  <!-- On ajoute les différents styles, l'icone de la page, le nom et on déclare l'encodage -->
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="styles/general.css"/>
-  <link rel="stylesheet" type="text/css" href="styles/galerie_style.css"/>
-  <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
-  <title>AlphaCamera - Galerie </title>
-</head>
+  <head>
+    <!-- On ajoute les différents styles, l'icone de la page, le nom et on déclare l'encodage -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/general.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/galerie_style.css"/>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico" />
+    <title>AlphaCamera - Galerie </title>
+  </head>
 
-<body id="galerie">
+  <body id="galerie">
 
-  <header>
-    <a href="./index.html" id="addresslogo"><img src="./images/ac-logo.png" alt="Logo d'AlphaCamera" id="logomenu"></a>
-    <nav>
-    <!-- Accueil / Galerie / Store / Presse / Equipe / Nous rejoindre / Contact / FAQ-->
-      <div>
-        <a href="./index.html">Accueil</a>
-      </div>
-      <div>
-        <a href="./galerie.html">Galerie</a>
-      </div>
-      <div>
-        <a href="./store.html">Store</a>
-      </div>
-      <div id="hovercontact">
-        <a href="./contact.html" id="contactpos">Contact  </a> <div id="downarrowcontact">&#x25BC;</div>
-        <div id="boxshadowdropdown"></div>
-        <div id="dropdownmenugeneral">
-          <div class="borderbottommenu"><a href="./presse.html" class="margintopless">Presse</a></div>
-          <div class="borderbottommenu"><a href="./equipe.html" class="margintopless" class="borderbottommenu">Equipe</a></div>
-          <div class="borderbottommenu"><a href="./nous_rejoindre.html" class="margintopless">Nous rejoindre</a></div>
-          <div><a href="./faq.html">Foire aux questions</a></div>
+    <header>
+      <a href="./index.html" id="addresslogo"><img src="./images/ac-logo.png" alt="Logo d'AlphaCamera" id="logomenu"></a>
+      <nav>
+      <!-- Accueil / Galerie / Store / Presse / Equipe / Nous rejoindre / Contact / FAQ-->
+        <div>
+          <a href="./index.html">Accueil</a>
         </div>
+        <div>
+          <a href="./galerie.html">Galerie</a>
+        </div>
+        <div>
+          <a href="./store.html">Store</a>
+        </div>
+        <div id="hovercontact">
+          <a href="./contact.html" id="contactpos">Contact  </a> <div id="downarrowcontact">&#x25BC;</div>
+          <div id="boxshadowdropdown"></div>
+          <div id="dropdownmenugeneral">
+            <div class="borderbottommenu"><a href="./presse.html" class="margintopless">Presse</a></div>
+            <div class="borderbottommenu"><a href="./equipe.html" class="margintopless borderbottommenu">Equipe</a></div>
+            <div class="borderbottommenu"><a href="./nous_rejoindre.html" class="margintopless">Nous rejoindre</a></div>
+            <div><a href="./faq.html">Foire aux questions</a></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+  <div id="galerie_page">
+    <div id="galerie_titre"> Galerie </div>
+    <div id="galerie_meta">
+    	<div class="galerie_slider">
+    		<figure>
+    			<img src="./images/galerie-1.jpg" alt="Première image galerie">
+          <figcaption> Yosemite Mountains ©Noah Bradley </figcaption>
+    		</figure>
+    		<figure>
+    			<img src="./images/galerie-2.jpg" alt="Seconde image galerie">
+          <figcaption> Iceland Sunset ©Noah Bradley </figcaption>
+    		</figure>
+    		<figure>
+    			<img src="./images/galerie-3.jpg" alt="Troisième image galerie">
+          <figcaption> Caves ©Noah Bradley </figcaption>
+    		</figure>
+    		<figure>
+    			<img src="./images/galerie-4.jpg" alt="Quatrième image galerie">
+          <figcaption> London lighting ©Noah Bradley </figcaption>
+    		</figure>
+    		<figure>
+    			<img src="./images/galerie-5.jpg" alt="Cinquième image galerie">
+          <figcaption>  Bucharest ©Noah Bradley </figcaption>
+    		</figure>
+    	</div>
+    </div>
+
+    <div>
+    <map name=m1>
+      <area shape=default href=#img1 alt="map 1">
+    </map>
+    <map name=m2>
+      <area shape=default href=#img2 alt="map 2">
+    </map>
+    <map name=m3>
+      <area shape=default href=#img3 alt="map 3">
+    </map>
+    <map name=m4>
+      <area shape=default href=#img4 alt="map 4">
+    </map>
+    <map name=m5>
+      <area shape=default href=#img5 alt="map 5">
+    </map>
+    <map name=m6>
+      <area shape=default href=#img6 alt="map 6">
+    </map>
+    <map name=m7>
+      <area shape=default href=#img7 alt="map 7">
+    </map>
+
+
+    <div id="galerie_mosaic">
+      <div class="galerie_thumb_wrapper">
+        <img id="img1" class="galerie_thumb" usemap=#m1 src="./images/parallax5.jpg" alt="Thumbnail numéro 1" />
+        <a href="#" class="galerie_close"></a>
+        <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
       </div>
-    </nav>
-  </header>
 
+      <div class="galerie_thumb_wrapper">
+        <img id="img2" class="galerie_thumb" usemap=#m2 src="./images/parallax5.jpg" alt="Thumbnail numéro 2" />
+        <a href="#" class="galerie_close"></a>
+        <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
+      </div>
 
-<div id="galerie_page">
-  <div id="galerie_titre"> Galerie </div>
-  <div id="galerie_meta">
-  	<div class="galerie_slider">
-  		<figure>
-  			<img src="./images/galerie-1.jpg" alt="Première image galerie">
-        <figcaption> Yosemite Mountains ©Noah Bradley </figcaption>
-  		</figure>
-  		<figure>
-  			<img src="./images/galerie-2.jpg" alt="Seconde image galerie">
-        <figcaption> Iceland Sunset ©Noah Bradley </figcaption>
-  		</figure>
-  		<figure>
-  			<img src="./images/galerie-3.jpg" alt="Troisième image galerie">
-        <figcaption> Caves ©Noah Bradley </figcaption>
-  		</figure>
-  		<figure>
-  			<img src="./images/galerie-4.jpg" alt="Quatrième image galerie">
-        <figcaption> London lighting ©Noah Bradley </figcaption>
-  		</figure>
-  		<figure>
-  			<img src="./images/galerie-5.jpg" alt="Cinquième image galerie">
-        <figcaption>  Bucharest ©Noah Bradley </figcaption>
-  		</figure>
-  	</div>
+      <div class="galerie_thumb_wrapper">
+        <img id="img3" class="galerie_thumb" usemap=#m3 src="./images/parallax5.jpg" alt="Thumbnail numéro 3" />
+        <a href="#" class="galerie_close"></a>
+        <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
+      </div>
+
+      <div class="galerie_thumb_wrapper">
+        <img id="img4" class="galerie_thumb" usemap=#m4 src="./images/parallax5.jpg" alt="Thumbnail numéro 4" />
+        <a href="#" class="galerie_close"></a>
+        <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
+      </div>
+
+      <div class="galerie_thumb_wrapper">
+        <img id="img5" class="galerie_thumb" usemap=#m5 src="./images/parallax5.jpg" alt="Thumbnail numéro 5" />
+        <a href="#" class="galerie_close"></a>
+        <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
+      </div>
+
+      <div class="galerie_thumb_wrapper">
+        <img id="img6" class="galerie_thumb" usemap=#m6 src="./images/parallax5.jpg" alt="Thumbnail numéro 6" />
+        <a href="#" class="galerie_close"></a>
+        <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
+      </div>
+
+      <div class="galerie_thumb_wrapper">
+        <img id="img7" class="galerie_thumb" usemap=#m7 src="./images/parallax5.jpg" alt="Thumbnail numéro 7" />
+        <a href="#" class="galerie_close"></a>
+        <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
+      </div>
+    </div>
+    </div>
+
   </div>
 
-  <div>
-  <map name=m1>
-    <area shape=default href=#img1 alt="map 1">
-  </map>
-  <map name=m2>
-    <area shape=default href=#img2 alt="map 2">
-  </map>
-  <map name=m3>
-    <area shape=default href=#img3 alt="map 3">
-  </map>
-  <map name=m4>
-    <area shape=default href=#img4 alt="map 4">
-  </map>
-  <map name=m5>
-    <area shape=default href=#img5 alt="map 5">
-  </map>
-  <map name=m6>
-    <area shape=default href=#img6 alt="map 6">
-  </map>
-  <map name=m7>
-    <area shape=default href=#img7 alt="map 7">
-  </map>
+  <footer>
+    <div id="footer_div">
+      <div>
+        <h1> Plan du site </h1>
+        <ul>
+          <li> <a href="./index.html">Accueil</a> </li>
+          <li> <a href="./galerie.html">Galerie</a> </li>
+          <li> <a href="./store.html">Store</a> </li>
+          <li> <a href="./contact.html">  Contact  </a> </li>
+        </ul>
+      </div>
+      <div>
+        <h1> Qui sommes-nous ? </h1>
+        <ul>
+          <li> <a href="./presse.html">Presse</a> </li>
+          <li> <a href="./equipe.html">Equipe</a> </li>
+          <li> <a href="./nous_rejoindre.html">Nous rejoindre</a> </li>
+          <li> <a href="./faq.html">FAQ</a> </li>
+        </ul>
+      </div>
+      <div>
+        <h1> Contact : </h1>
+        <ul>
+          <li> ☎️ : 04 31 41 59 26 </li>
+          <li> 🏢 : 99, Avenue d'Occitanie, 34090 Montpellier </li>
+          <li id="li_footer_legal"><span id="footer_legal"> Tous les fichiers génériques du site Internet AlphaCamera sont la propriété intellectuelle de Vaĩle Limited. Sauf autorisation écrite du propriétaire, la reproduction ou la modification de ces fichiers, par quelque moyen ou par quelque usage que ce soit, est strictement interdite. </span> </li>
+        </ul>
+      </div>
+      <div>
+        <h1> Réseaux sociaux : </h1>
+        <a href="https://www.facebook.com"><img class="footer_photos" src="./images/facebook.png" alt="logo facebook"></a>
+        <a href="https://www.twitter.com"><img class="footer_photos" src="./images/twitter.png" alt="logo twitter"></a>
+        <a href="https://www.instagram.com"><img class="footer_photos"  src="./images/instagram.png" alt="logo instagram"></a>
+      </div>
+      <div id="copyright">
+        © Copyright 2018, Vaĩle Limited, Touts droits réservés
+      </div>
+    </div>
+  </footer>
+  </body>
 
-
-  <div id="galerie_mosaic">
-    <div class="galerie_thumb_wrapper">
-      <img id="img1" class="galerie_thumb" usemap=#m1 src="./images/parallax5.jpg" alt="Thumbnail numéro 1" />
-      <a href="#" class="galerie_close"></a>
-      <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
-    </div>
-
-    <div class="galerie_thumb_wrapper">
-      <img id="img2" class="galerie_thumb" usemap=#m2 src="./images/parallax5.jpg" alt="Thumbnail numéro 2" />
-      <a href="#" class="galerie_close"></a>
-      <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
-    </div>
-
-    <div class="galerie_thumb_wrapper">
-      <img id="img3" class="galerie_thumb" usemap=#m3 src="./images/parallax5.jpg" alt="Thumbnail numéro 3" />
-      <a href="#" class="galerie_close"></a>
-      <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
-    </div>
-
-    <div class="galerie_thumb_wrapper">
-      <img id="img4" class="galerie_thumb" usemap=#m4 src="./images/parallax5.jpg" alt="Thumbnail numéro 4" />
-      <a href="#" class="galerie_close"></a>
-      <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
-    </div>
-
-    <div class="galerie_thumb_wrapper">
-      <img id="img5" class="galerie_thumb" usemap=#m5 src="./images/parallax5.jpg" alt="Thumbnail numéro 5" />
-      <a href="#" class="galerie_close"></a>
-      <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
-    </div>
-
-    <div class="galerie_thumb_wrapper">
-      <img id="img6" class="galerie_thumb" usemap=#m6 src="./images/parallax5.jpg" alt="Thumbnail numéro 6" />
-      <a href="#" class="galerie_close"></a>
-      <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
-    </div>
-
-    <div class="galerie_thumb_wrapper">
-      <img id="img7" class="galerie_thumb" usemap=#m7 src="./images/parallax5.jpg" alt="Thumbnail numéro 7" />
-      <a href="#" class="galerie_close"></a>
-      <img class="galerie_expand" src="./images/zoom.png" alt="bouton zoom">
-    </div>
-  </div>
-  </div>
-
-</div>
-
-<footer>
-  <div id="footer_div">
-    <div>
-      <h1> Plan du site </h1>
-      <ul>
-        <li> <a href="./index.html">Accueil</a> </li>
-        <li> <a href="./galerie.html">Galerie</a> </li>
-        <li> <a href="./store.html">Store</a> </li>
-        <li> <a href="./contact.html">  Contact  </a> </li>
-      </ul>
-    </div>
-    <div>
-      <h1> Qui sommes-nous ? </h1>
-      <ul>
-        <li> <a href="./presse.html">Presse</a> </li>
-        <li> <a href="./equipe.html">Equipe</a> </li>
-        <li> <a href="./nous_rejoindre.html">Nous rejoindre</a> </li>
-        <li> <a href="./faq.html">FAQ</a> </li>
-      </ul>
-    </div>
-    <div>
-      <h1> Contact : </h1>
-      <ul>
-        <li> ☎️ : 04 31 41 59 26 </li>
-        <li> 🏢 : 99, Avenue d'Occitanie, 34090 Montpellier </li>
-        <li id="li_footer_legal"><span id="footer_legal"> Tous les fichiers génériques du site Internet AlphaCamera sont la propriété intellectuelle de Vaĩle Limited. Sauf autorisation écrite du propriétaire, la reproduction ou la modification de ces fichiers, par quelque moyen ou par quelque usage que ce soit, est strictement interdite. </span> </li>
-      </ul>
-    </div>
-    <div>
-      <h1> Réseaux sociaux : </h1>
-      <a href="https://www.facebook.com"><img class="footer_photos" src="./images/facebook.png" alt="logo facebook"></a>
-      <a href="https://www.twitter.com"><img class="footer_photos" src="./images/twitter.png" alt="logo twitter"></a>
-      <a href="https://www.instagram.com"><img class="footer_photos"  src="./images/instagram.png" alt="logo instagram"></a>
-    </div>
-    <div id="copyright">
-      © Copyright 2018, Vaĩle Limited, Touts droits réservés
-    </div>
-  </div>
-</footer>
-</body>
-
-</html>
+  </html>

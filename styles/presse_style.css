@@ -1,0 +1,104 @@
+body {
+  background-image: url("../images/background-presse.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  font-size: 1.9vw;
+}
+
+address {
+  margin:auto;
+  color: dimgray;
+  padding:10px;
+  border:outset 5px gray;
+  font-size: 1.5vw;
+  min-width: 30%;
+  margin-bottom: 5vw;
+}
+
+.presse_title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0.3vw;
+}
+
+#presse_meta_div {
+  width:85vw;
+  margin: auto;
+  background-color: #F8F9F9;
+  margin-top: 3vh;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+}
+
+#presse_adresse {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#presse_intro {
+  margin-bottom: 1vw;
+  text-align: center;
+}
+
+.presse_nom {
+  width:100%;
+  text-align: center;
+  font-weight: bolder;
+  color:black;
+  font-size: 1.9vw;
+  margin-bottom: 0.2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+#meta_review {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width:50vw;
+  margin:auto;
+}
+
+.presse_review {
+  display: flex;
+  flex-direction: row;
+  font-size: 10vw;
+  justify-content: center;
+  align-items: center;
+  color:dimgray;
+}
+
+.presse_img_review {
+  height: 5vw;
+  padding: 2vw;
+  margin-top: 1.7vw;
+  width:auto;
+}
+
+.presse_comment {
+  position:relative;
+  text-align: justify;
+  font-size: 1.7vw;
+  margin-top: 1.7vw;
+  margin-right: 2vw;
+}
+
+
+.presse_reviewer a{
+  font-size: 1.4vw;
+  color:gold;
+  position: absolute;
+  right:0;
+}
