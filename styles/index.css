@@ -1,15 +1,15 @@
-.parallax {
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+/*-------------------------------------*/
 
 .textbetween {
 	background-color: #f8f7f7;
 	width : 100%;
 	text-align: center;
 	z-index: 500;
+}
+
+#bioeyetitle {
+	padding: 30px;
+	font-size: 7vw;
 }
 
 #txt1 {
@@ -44,16 +44,33 @@
 	margin-top: 10vh;
 }
 
-#bioeyetitle {
-	padding: 30px;
-	font-size: 7vw;
-}
-
 #txt3 {
 	color: #060606;
-	height: 1100px;
 	font-size: 3vw;
 	box-shadow: 0px 0px 20px 0px #060606;
+}
+
+#txt3 p {
+	font-size: 6vw;
+	line-height: 6vw;
+	margin: 0;
+	padding: 2vw;
+	padding-top: 6vw;
+	padding-bottom: 6vw;
+}
+
+#txt4 {
+	color: #060606;
+	box-shadow: 0px 0px 20px 0px #060606;
+}
+
+/*-------------------------------------*/
+
+.parallax {
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #parallax1 {
@@ -105,6 +122,22 @@
 	z-index: -300;
 	height: 25vh;
 }
+
+#parallax4 {
+	background-image: url(../images/parallax6.jpg);
+	position: relative;
+	z-index: -300;
+	height: 40vh;
+}
+
+#parallax5 {
+	background-image: url(../images/parallax1.jpg);
+	position: relative;
+	z-index: -300;
+	height: 40vh;
+}
+
+/*-------------------------------------*/
 
 #alphacameramkimage {
 	height: 25%;
@@ -171,7 +204,7 @@
 	left: 0;
 	padding: 40px;
 	visibility: hidden;
-	box-shadow: inset -4px -4px #56647a;
+	box-shadow: 5px 5px 10px -5px #060606;
 	border-radius: 0px 6px 6px 6px;
 }
 
@@ -189,6 +222,8 @@
 	transform: translateY(0%);
 	opacity: 1;
 }
+
+/*-------------------------------------*/
 
 #timelinecontainer {
 	width: 100%;
@@ -214,6 +249,7 @@
 	width: 100%;
 	border-radius: 1px;
 	background-color: #4c4c4c;
+	box-shadow: 5px 5px 10px -5px #060606;
 }
 
 #circle_timeline1 {
@@ -226,6 +262,7 @@
 	position: relative;
 	left: 47%;
 	top: calc(4vh-2.5vh);
+	box-shadow: 5px 5px 10px -5px #060606;
 }
 
 #circle_timeline2 {
@@ -238,6 +275,7 @@
 	position: relative;
 	left: 47%;
 	top: calc(4vh-2.5vh);
+	box-shadow: 5px 5px 10px -5px #060606;
 }
 
 #circle_timeline3 {
@@ -250,6 +288,7 @@
 	position: relative;
 	left: 47%;
 	top: calc(4vh-2.5vh);
+	box-shadow: 5px 5px 10px -5px #060606;
 }
 
 #circle_timeline4 {
@@ -262,6 +301,7 @@
 	position: relative;
 	left: 47%;
 	top: calc(4vh-2.5vh);
+	box-shadow: 5px 5px 10px -5px #060606;
 }
 
 #page1 {
@@ -292,6 +332,7 @@
 	color: #f8f7f7;
 	z-index : 0;
 	padding: 1% 2.5%;
+	box-shadow: 5px 5px 10px -5px #060606;
 }
 
 #tlswipelabel1 {
@@ -335,6 +376,48 @@
 #tlswipe2:checked ~ #tlswipelabel2 {
 	background-color: #4c4c4c;
 }
+
+/*-------------------------------------*/
+
+#reviewcontainer {
+	padding: 2vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+    justify-content: center;
+}
+
+blockquote {
+	background-color: #dbdbdb;
+	border-radius: 5px;
+}
+
+.review {
+	font-size: 2.5vw;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	margin: 1vw;
+	box-shadow: 3px 3px 10px -5px #060606;
+}
+
+blockquote p {
+	padding: 0.5vw;
+}
+
+cite {
+	font-size: 1.8vw;
+}
+
+/*-------------------------------------*/
+
+footer {
+	margin-top:0px;
+	box-shadow: 0px 0px 20px 0px #060606;
+}
+
+/*-------------------------------------*/
 
 @media(max-width: 1275px){
 	#parallax1 {
