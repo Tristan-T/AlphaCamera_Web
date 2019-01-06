@@ -1,0 +1,96 @@
+main {
+	font-size: 2vw;
+}
+
+.parallax {
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#parallax1 {
+	background-image: url(../images/parallax2.jpg);
+	z-index: -300;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f8f7f7;
+	
+}
+
+#parallax2 {
+	background-image: url(../images/parallax3-1.jpg);
+	z-index: -300;
+	height: 20vh;
+}
+
+#parallax3 {
+	background-image: url(../images/parallax5.jpg);
+	z-index: -300;
+	height: 20vh;
+}
+
+#faq {
+	
+}
+
+#questions {
+	padding: 1.5vw;
+	background-color: #f8f7f7;
+	box-shadow: 0px 0px 20px 0px #060606;
+	z-index: 300;
+}
+
+.question {
+	padding: 1.5vw;
+}
+
+a {
+	text-decoration: none;
+	color: #060606;
+}
+
+a:hover {
+	color: tomato;
+}
+
+#answers {
+	background-color: #f8f7f7;
+	box-shadow: 0px 0px 20px 0px #060606;
+	padding: 1.5vw;
+}
+
+.answer {
+	padding: 1.5vw;
+	line-height: 2.2vw;
+	border-top: solid #060606 2px;
+}
+
+#a1 {
+	border: none;
+	padding: 0px 1.5vw 1.5vw 1.5vw;
+}
+
+.answer > a {
+	color: #808080;
+}
+
+.answer > h3 {
+
+}
+
+#toparrow {
+	height: 3rem;
+	width: 3rem;
+	position: fixed;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	background-color: #f8f7f7;
+	border-radius: 50%;
+}
+
+footer {
+	margin-top:0;
+}

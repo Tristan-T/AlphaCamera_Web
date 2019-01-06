@@ -1,0 +1,115 @@
+main {
+	margin: 5%;
+	padding: 3%;
+	background-color:white;
+	border-radius:2%;
+	z-index:-1000;
+}
+
+body {
+	background-image: url("../images/paysage.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:bottom;
+}
+
+h1{
+	font-size: 200%;
+	text-align: center;
+	padding-top:2%; 
+}
+
+#accroche{
+	text-align: center;
+	
+}
+
+/*----les personnes------*/
+
+.une_personne{
+	margin-bottom:5%;
+	margin-top:5%;
+}
+
+
+.photo{
+	width:15%;
+	height:25%;
+	border-radius:50%;
+	border: 2px solid #1f1f14;
+	
+}
+
+.nom_pair{
+	margin-left:5%;
+}
+
+.description_pair{
+	margin-right:20%;
+	text-align:	justify;
+	direction:left;
+	overflow:hidden;
+}
+
+.nom_impair{
+	margin-left:45%;
+}
+	
+
+.description_impair{
+	margin-left:20%;
+	text-align:	justify;
+	direction:left;
+	overflow:hidden;
+}
+
+.description_pair .photo{
+	float: right;
+	margin:	 5px 20px 5px 100px;
+}
+
+.description_impair .photo{
+	float: left;
+	margin: 5px 100px 5px 20px;
+}
+
+.description_pair .p{
+	overflow:hidden;
+}
+
+.description_impair .p{
+	overflow:hidden;
+}
+
+/*---rejoindre---*/
+.rejoindre{
+	text-align:center;
+	background-image: url("../images/fond-ciel.jpeg");
+	background-repeat:repeat;
+	background-position:right top;
+	background-size:cover;
+	padding:3%;
+	
+}
+
+
+/*---bouton----*/
+#bouton_offre{
+	margin-left:20%;
+	margin-right:20%;	
+	margin-top:2%;
+	
+}
+
+#bouton_rejoindre{
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+	color:black;
+	background-color:#1ab2ff;
+	border:1px solid black;
+	padding:2%;
+	border-radius:2%;
+	
+}

@@ -1,0 +1,31 @@
+main {
+	margin: 5%;
+	padding: 2%;
+	background-color:white;
+	border-radius:2%;
+	z-index:-1000;
+}
+
+body {
+	background-image: url("../images/paysage.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:bottom;
+}
+
+#bouton_envoyer{
+	border-radius: 10%;
+	background-color: #C7F3FB ;
+	color:black;
+}
+
+#bouton{
+	margin-top:2%;
+	padding-bottom:3%;
+	text-align:center;
+}
+
+h2{
+	padding-left:5%;
+}

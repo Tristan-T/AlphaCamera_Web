@@ -39,6 +39,14 @@ body {
   background-size: cover;
 }
 
+header {
+	z-index: 999999;
+}
+
+main {
+	z-index: -1;
+}
+
 #achat_background {
   margin:auto;
   margin-top:20px;

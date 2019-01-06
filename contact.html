@@ -3,12 +3,13 @@
 	<head>
 		
 		<meta charset="utf-8">
-		<title>AlphaCamera Contactez nous</title>		
+		<title>AlphaCamera Contacter nous</title>		
 		<link rel="stylesheet" type="text/css" href="./styles/general.css">
 		<link rel="stylesheet" type="text/css" href="./styles/contact.css">
-		<link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+		
 			
 	</head>
+	
 	<body id="retour_debut">
 		
 		<header>
@@ -53,15 +54,15 @@
 												
 							<fieldset>		
 										
-								<label for="surname">Nom <span>*</span></label>  
+								<label for="surname">Nom <span class="red">*</span></label>  
 								<input id="surname" name="uname" type="text" placeholder="Nom" required>
 								<br>
 								<br>
-								<label for="firstname">Prénom <span>*</span></label>  
+								<label for="firstname">Prénom <span class="red">*</span></label>  
 								<input id="firstname" name="first_name" type="text" placeholder="Prenom">
 								<br>
 								<br>
-								<label for="email">Email <span>*</span></label> 
+								<label for="email">Email <span class="red">*</span></label> 
 								<input id="email" name="e_mail" type="email" placeholder="yourmail@domain.com" required>
 								<br>
 								<br>
@@ -69,7 +70,7 @@
 								<input id="codepostal" name="code_postal" type="text" pattern="[0-9]{5}" placeholder="ex:34290">
 								<br>
 								<br>
-								<label for="pays_origine">Pays d'origine <span>*</span></label> 
+								<label for="pays_origine">Pays d'origine <span class="red">*</span></label> 
 									
 									<select id="pays_origine">
 										
@@ -95,7 +96,7 @@
 							</fieldset>
 							<br>
 						
-						<h2>Par quoi ?</h2>
+						<h2>Comment vous avez-nous connu ?</h2>
 							<fieldset>		
 								<label for="commentnous">Vous avez entendu parlé de nous via ?</label> 
 									
@@ -115,7 +116,7 @@
 						
 							<fieldset>
 							
-								<label for="datecontact">A quelle date souhaitez-vous être recontacté ? <span>*</span></label> <!-- ip -->
+								<label for="datecontact">A quelle date souhaitez-vous être recontacté ? <span class="red">*</span></label> <!-- ip -->
 								<input id="datecontact" name="date_contact" type="date" required>
 							
 							</fieldset>
@@ -126,8 +127,8 @@
 							
 							<fieldset>
 							
-								<label for="messagepour">Un petit message</label><br>
-								<textarea id="messagepour" name="textarea" rows="5" cols="50" placeholder="Donnez votre avis, vos suggestions, vos attentes... "></textarea> <!-- i -->
+								<label for="messagepour">Un petit message <span class="red">*</span></label><br>
+								<textarea id="messagepour" name="textarea" rows="5" cols="50" placeholder="Donnez votre avis, vos suggestions, vos attentes... " required></textarea> <!-- i -->
 								
 							</fieldset>
 						<div id="bouton">
@@ -136,21 +137,15 @@
 						<br>
 					</form>
 					<div id="attention">
-						Les champs précédés de <span>*</span> sont obligatoires.
+						Les champs précédés de <span class="red">*</span> sont obligatoires.
 					</div>
 				</div>
 				
 			</article>
-				
-			<aside>
-				
-			</aside>
+			<a id="fleche_retour" href="#retour_debut" ><img src="./images/top.png" id="fleche" alt="flèche"></a>
+		</main>	
 			
-		</main>
-		
 		<footer>
-			
-			<a id="fleche_retour" href="#retour_debut" ><img src="./assets/fleche.png" id="fleche" alt="flèche"></a>
 		  <div id="footer_div">
 			<div>
 			  <h1> Plan du site </h1>
@@ -189,7 +184,7 @@
 			</div>
 		  </div>
 		</footer>
-		
+
 	</body>
 	
 </html>
