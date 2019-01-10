@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+
 		<meta charset="utf-8">
-		<title>AlphaCamera Contacter nous</title>		
+		<title>AlphaCamera Contacter nous</title>
 		<link rel="stylesheet" type="text/css" href="./styles/general.css">
 		<link rel="stylesheet" type="text/css" href="./styles/contact.css">
-		
-			
+		<link rel="shortcut icon" type="image/png" href="./images/favicon.ico"/>
+
 	</head>
-	
+
 	<body id="retour_debut">
-		
+
 		<header>
 			<a href="./index.html" id="addresslogo"><img src="./images/ac-logo.png" alt="Logo d'AlphaCamera" id="logomenu"></a>
-			
+
 			<nav>
-			
+
 				<div>
 					<a href="./index.html">Accueil</a>
-				</div>			
+				</div>
 				<div>
 					<a href="./galerie.html">Galerie</a>
-				</div>			
+				</div>
 				<div>
 					<a href="./store.html">Store</a>
 				</div>
@@ -31,7 +31,7 @@
 					<div id="boxshadowdropdown"></div>
 					<div id="dropdownmenugeneral">
 						<div class="borderbottommenu"><a href="./presse.html" class="margintopless">Presse</a></div>
-						<div class="borderbottommenu"><a href="./equipe.html" class="margintopless" class="borderbottommenu">Equipe</a></div>
+						<div class="borderbottommenu"><a href="./equipe.html" class="margintopless orderbottommenu">Equipe</a></div>
 						<div class="borderbottommenu"><a href="./nous_rejoindre.html" class="margintopless">Nous rejoindre</a></div>
 						<div><a href="./faq.html">Foire aux questions</a></div>
 					</div>
@@ -39,41 +39,41 @@
 			</nav>
 			<div id="boxshadowonly"></div>
 		</header>
-		
+
 		<main>
-			
+
 			<article>
-				
+
 				<div id="toutformulair">
-					
+
 					<h1>Pour nous contacter</h1>
-					
+
 					<form action="sendToMySecondYearInIut.php" method="get">
-						
+
 						<h2>Informations personnelles</h2>
-												
-							<fieldset>		
-										
-								<label for="surname">Nom <span class="red">*</span></label>  
+
+							<fieldset>
+
+								<label for="surname">Nom <span class="red">*</span></label>
 								<input id="surname" name="uname" type="text" placeholder="Nom" required>
 								<br>
 								<br>
-								<label for="firstname">Prénom <span class="red">*</span></label>  
+								<label for="firstname">Prénom <span class="red">*</span></label>
 								<input id="firstname" name="first_name" type="text" placeholder="Prenom">
 								<br>
 								<br>
-								<label for="email">Email <span class="red">*</span></label> 
+								<label for="email">Email <span class="red">*</span></label>
 								<input id="email" name="e_mail" type="email" placeholder="yourmail@domain.com" required>
 								<br>
 								<br>
-								<label for="codepostal">Code postal </label>  
+								<label for="codepostal">Code postal </label>
 								<input id="codepostal" name="code_postal" type="text" pattern="[0-9]{5}" placeholder="ex:34290">
 								<br>
 								<br>
-								<label for="pays_origine">Pays d'origine <span class="red">*</span></label> 
-									
+								<label for="pays_origine">Pays d'origine <span class="red">*</span></label>
+
 									<select id="pays_origine">
-										
+
 										<option value="al">Allemagne</option>
 										<option value="agl">Angleterre</option>
 										<option value="au">Australie</option>
@@ -90,46 +90,46 @@
 										<option value="ss">Suisse</option>
 										<option value="usa">U.S.A</option>
 										<option value="vn">Viêt Nam</option>
-										
-									</select>	
-											
+
+									</select>
+
 							</fieldset>
 							<br>
-						
+
 						<h2>Comment vous avez-nous connu ?</h2>
-							<fieldset>		
-								<label for="commentnous">Vous avez entendu parlé de nous via ?</label> 
-									
+							<fieldset>
+								<label for="commentnous">Vous avez entendu parlé de nous via ?</label>
+
 									<select id="comment_nous">
-										
+
 										<option value="al">Bouche-à-oreille</option>
 										<option value="au">Recherche internet</option>
 										<option value="bh">Magazines</option>
-										<option value="agl">Médias</option>										
+										<option value="agl">Médias</option>
 										<option value="bh">Publicités</option>
-																	
-										
-									</select>	
+
+
+									</select>
 							</fieldset>
 							<br>
-						<h2>Retour</h2>	
-						
+						<h2>Retour</h2>
+
 							<fieldset>
-							
+
 								<label for="datecontact">A quelle date souhaitez-vous être recontacté ? <span class="red">*</span></label> <!-- ip -->
 								<input id="datecontact" name="date_contact" type="date" required>
-							
+
 							</fieldset>
 							<br>
-							
-							
-						<h2>Commentaire</h2>	
-							
+
+
+						<h2>Commentaire</h2>
+
 							<fieldset>
-							
+
 								<label for="messagepour">Un petit message <span class="red">*</span></label><br>
 								<textarea id="messagepour" name="textarea" rows="5" cols="50" placeholder="Donnez votre avis, vos suggestions, vos attentes... " required></textarea> <!-- i -->
-								
+
 							</fieldset>
 						<div id="bouton">
 							<input id="bouton_envoyer" type="submit" value="Envoyer">
@@ -140,11 +140,11 @@
 						Les champs précédés de <span class="red">*</span> sont obligatoires.
 					</div>
 				</div>
-				
+
 			</article>
 			<a id="fleche_retour" href="#retour_debut" ><img src="./images/top.png" id="fleche" alt="flèche"></a>
-		</main>	
-			
+		</main>
+
 		<footer>
 		  <div id="footer_div">
 			<div>
@@ -186,5 +186,5 @@
 		</footer>
 
 	</body>
-	
+
 </html>

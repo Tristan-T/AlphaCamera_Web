@@ -4,6 +4,7 @@ main {
 	background-color:white;
 	border-radius:2%;
 	z-index:-1000;
+	font-size: 150%;
 }
 
 body {
@@ -17,12 +18,12 @@ body {
 h1{
 	font-size: 200%;
 	text-align: center;
-	padding-top:2%; 
+	padding-top:2%;
 }
 
 #accroche{
 	text-align: center;
-	
+
 }
 
 /*----les personnes------*/
@@ -34,11 +35,11 @@ h1{
 
 
 .photo{
-	width:15%;
-	height:25%;
+	width:25%;
+	height:40%;
 	border-radius:50%;
 	border: 2px solid #1f1f14;
-	
+
 }
 
 .nom_pair{
@@ -47,20 +48,18 @@ h1{
 
 .description_pair{
 	margin-right:20%;
-	text-align:	justify;
-	direction:left;
+	text-align:justify;
 	overflow:hidden;
 }
 
 .nom_impair{
 	margin-left:45%;
 }
-	
+
 
 .description_impair{
 	margin-left:20%;
-	text-align:	justify;
-	direction:left;
+	text-align:justify;
 	overflow:hidden;
 }
 
@@ -90,26 +89,30 @@ h1{
 	background-position:right top;
 	background-size:cover;
 	padding:3%;
-	
+
 }
 
 
 /*---bouton----*/
 #bouton_offre{
 	margin-left:20%;
-	margin-right:20%;	
+	margin-right:20%;
 	margin-top:2%;
-	
+
 }
 
 #bouton_rejoindre{
-	text-decoration:none;
-	text-align:center;
-	font-weight:bold;
-	color:black;
-	background-color:#1ab2ff;
-	border:1px solid black;
-	padding:2%;
-	border-radius:2%;
-	
+	text-align: center;
+	transition: transform .2s;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding : 0.7vw 4vw 0.7vw 4vw;
+	background-color: skyblue;
+	text-decoration: none;
+
+}
+
+#bouton_rejoindre:hover {
+	transform:scale3d(1.1, 1.1, 1);
+	transition: transform .4s;
+	box-shadow: inset 0px 0px 10px 0px deepskyblue;
 }

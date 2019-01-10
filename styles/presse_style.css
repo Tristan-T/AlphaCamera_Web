@@ -1,34 +1,35 @@
 body {
+  color: #060606;
   background-image: url("../images/background-presse.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom;
   background-size: cover;
-  font-size: 1.9vw;
 }
 
 address {
   margin:auto;
-  color: dimgray;
   padding:10px;
-  border:outset 5px gray;
+  border:outset 5px skyblue;
   font-size: 1.5vw;
   min-width: 30%;
   margin-bottom: 5vw;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .presse_title {
   text-align: center;
-  font-size: 3em;
+  font-size: 5vw;
   margin-bottom: 0.3vw;
 }
 
 #presse_meta_div {
-  width:85vw;
+  width:80%;
   margin: auto;
+  font-size: 2vw;
   background-color: #F8F9F9;
   margin-top: 3vh;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 #presse_adresse {
@@ -47,9 +48,10 @@ address {
   text-align: center;
   font-weight: bolder;
   color:black;
-  font-size: 1.9vw;
+  font-size: 2vw;
   margin-bottom: 0.2vw;
 }
+
 
 
 
@@ -98,7 +100,16 @@ address {
 
 .presse_reviewer a{
   font-size: 1.4vw;
-  color:gold;
+  color:gray;
   position: absolute;
   right:0;
+}
+
+.presse_reviewer a:hover {
+  color:  #f46464;
+}
+
+
+#hue_1 {
+  filter:hue-rotate(270deg);
 }

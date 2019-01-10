@@ -8,14 +8,16 @@
 }
 
 #bioeyetitle {
+	font-weight: bold;
 	padding: 30px;
-	font-size: 7vw;
+	font-size: 3vw;
 }
 
 #txt1 {
 	color: #060606;
 	height: 25%;
-	font-size: 4vw;
+	font-size: 3vw;
+	font-weight: bold;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
@@ -24,44 +26,48 @@
 }
 
 #txt1petit {
-	font-size: 2.5vw;
+	font-size: 2vw;
 	width: 75%;
 	margin: auto;
+	font-weight: normal;
 }
 
 #txt2 {
 	color: #060606;
-	height: 60vw;
-	font-size: 3vw;
+	font-size: 2vw;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
 #txt2techdescribe {
 	display: flex;
+	padding-bottom: 8vh;
 	flex-direction: row;
 	align-items: stretch;
 	align-content: flex-start;
 	margin-top: 10vh;
+	font-size: 2vw;
 }
 
 #txt3 {
 	color: #060606;
-	font-size: 3vw;
 	box-shadow: 0px 0px 20px 0px #060606;
+	height:90vh;
 }
 
 #txt3 p {
-	font-size: 6vw;
-	line-height: 6vw;
+	font-size: 3vw;
+	line-height: 3vw;
+	font-weight: bold;
 	margin: 0;
 	padding: 2vw;
-	padding-top: 6vw;
-	padding-bottom: 6vw;
+	padding-top: 3vw;
+	padding-bottom: 5vw;
 }
 
 #txt4 {
 	color: #060606;
 	box-shadow: 0px 0px 20px 0px #060606;
+	font-size:2vw;
 }
 
 /*-------------------------------------*/
@@ -75,7 +81,7 @@
 
 #parallax1 {
 	background-image: url(../images/parallax3-1.jpg);
-	display: flex;	
+	display: flex;
 	align-items: stretch;
 	position: relative;
 	z-index: -300;
@@ -200,7 +206,7 @@
 	color: #f8f7f7;
 	font-size: 3vw;
 	position: absolute;
-	top: 4vw;
+	top: 3vw;
 	left: 0;
 	padding: 40px;
 	visibility: hidden;
@@ -228,7 +234,7 @@
 #timelinecontainer {
 	width: 100%;
 	overflow: hidden;
-	height : 75vh;
+	height : 50vh;
 	position: relative;
 }
 
@@ -261,7 +267,6 @@
 	color: #f8f7f7;
 	position: relative;
 	left: 47%;
-	top: calc(4vh-2.5vh);
 	box-shadow: 5px 5px 10px -5px #060606;
 }
 
@@ -274,7 +279,6 @@
 	color: #f8f7f7;
 	position: relative;
 	left: 47%;
-	top: calc(4vh-2.5vh);
 	box-shadow: 5px 5px 10px -5px #060606;
 }
 
@@ -287,7 +291,6 @@
 	color: #f8f7f7;
 	position: relative;
 	left: 47%;
-	top: calc(4vh-2.5vh);
 	box-shadow: 5px 5px 10px -5px #060606;
 }
 
@@ -300,7 +303,6 @@
 	color: #f8f7f7;
 	position: relative;
 	left: 47%;
-	top: calc(4vh-2.5vh);
 	box-shadow: 5px 5px 10px -5px #060606;
 }
 
@@ -325,7 +327,7 @@
 	visibility: visible;
 	top: 6.5vh;
 	left: 1.75%;
-	font-size: 2.5vw;
+	font-size: 1.6vw;
 	position: relative;
 	width: 90%;
 	background-color: #5f5f5f;
@@ -386,7 +388,7 @@
 	flex-wrap: wrap;
 	text-align: center;
 	align-items: center;
-    justify-content: center;
+  justify-content: center;
 }
 
 blockquote {
@@ -394,8 +396,10 @@ blockquote {
 	border-radius: 5px;
 }
 
+
 .review {
-	font-size: 2.5vw;
+	color: #060606;
+	font-size: 2vw;
 	background-color: #f2f2f2;
 	border-radius: 10px;
 	margin: 1vw;
@@ -420,27 +424,28 @@ footer {
 /*-------------------------------------*/
 
 @media(max-width: 1275px){
+
 	#parallax1 {
 	height: 70vh;
 	}
-	
+
 	#txt1 {
 	font-size: 4.5vw;
 	}
-	
+
 	#txt2 {
-	height: 80vw;
+		height:60vh;
 	}
-	
+
 	#txt2techdescribe {
 	display: block;
 	margin-top: 4vh;
 	}
-	
+
 	#alphacameramkimage {
 	margin-bottom: 4vh;
 	}
-	
+
 	#mkselection {
 	width: 80%;
 	left: 10%;
@@ -452,15 +457,15 @@ footer {
 	#parallax1 {
 	height: 60vh;
 	}
-	
+
 	#txt1 {
 	font-size: 5.5vw;
 	}
-	
+
 	#txt2 {
 	height: 90vw;
 	}
-	
+
 	.text_timeline {
 	font-size: 3.5vh;;
 	}
@@ -470,28 +475,28 @@ footer {
 	#mkselection {
 	display: none;
 	}
-	
+
 	#alphacameramkimage {
 	margin-bottom: 0;
 	height: 55vw;
 	width: 55vw;
 	position: static;
 	}
-	
+
 	#span12{
 	display: none;
 	}
-	
+
 	#parallax1 > div{
 	display: flex;
 	flex-direction: column;
 	margin: auto auto;
 	}
-	
+
 	#parallax2 {
 	height: 20vh;
 	}
-	
+
 	#parallax3 {
 	height: 15vh;
 	}
@@ -513,11 +518,11 @@ footer {
 	#txt2 {
 	height: 95vw;
 	}
-	
+
 	#parallax1 {
 	height: 50vh;
 	}
-	
+
 	#parallax2 {
 	height: 15vh;
 	}
@@ -533,19 +538,19 @@ footer {
 	#parallax1 {
 	height: 40vh;
 	}
-	
+
 	#parallax2 {
 	height: 10vh;
 	}
-	
+
 	#txt1 {
 	font-size: 6.5vw;
 	}
-	
+
 	#txt2 {
 	height: 100vw;
 	}
-	
+
 	#timelinecontainer {
 	height: 120vh;
 	}

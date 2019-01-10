@@ -16,6 +16,7 @@
 /* Definition main page */
 
 body {
+	color: #060606;
 	background-image: url("../images/parallax4.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -25,18 +26,17 @@ body {
 
 #galerie_page {
 	background: #F8F9F9;
-	width: 65%;
-	margin: auto;
+	width: 80%;
+	margin: 10vh auto 0 auto;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 #galerie_titre {
 	text-align: center;
-	font-size: 600%;
+	font-size: 5vw;
 	font-weight: 900;
-	padding-top: 2vh;
-	padding-bottom: 2vh;
-	margin-top:5vh;
+	padding-top: 5vh;
+	padding-bottom: 6vh;
 }
 
 /* Slideshow */

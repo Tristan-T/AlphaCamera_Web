@@ -1,14 +1,24 @@
+#bouton_envoyer {
+	text-align: center;
+	transition: transform .2s;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	padding : 0.7vw 4vw 0.7vw 4vw;
+	background-color: #36ae85;
+	text-decoration: none;
+	border:none;
+	margin-top: 2vh;
+}
 
-#bouton_envoyer{
-	border-radius: 10%;
-	background-color: #C7F3FB ;
-	color:black;
+#bouton_envoyer:hover {
+	transform:scale3d(1.1, 1.1, 1);
+	transition: transform .4s;
+	box-shadow: inset 0px 0px 10px 0px rgba(0,128,0,0.75);
 }
 
 #bouton{
 	margin-top:2%;
 	padding-bottom:3%;
-	
+
 }
 
 ul {
@@ -16,23 +26,26 @@ ul {
 	}
 
 .liste_emploi {
-	text-decoration:none;
-	color:black;
+	color:gray;
 	font-weight:bold;
+}
+
+.liste_emploi:hover {
+	color: #f46464;
 }
 
 .cv{
 	text-align:center;
 }
-	
+
 h2{
 	padding-left:5%;
 }
 
 h1{
-	font-size: 200%;
+	font-size: 3em;
 	text-align: center;
-	padding-top:2%; 
+	padding-top:2%;
 }
 
 main {
@@ -41,8 +54,9 @@ main {
 	margin: 5%;
 	border-radius:2%;
 	z-index:-1000;
+	font-size: 120%;
 }
-	
+
 body {
 	background-image: url("../images/paysage.jpg");
 	background-repeat:no-repeat;

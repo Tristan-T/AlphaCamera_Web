@@ -9,7 +9,8 @@ body {
 #store_background {
   margin:auto;
   margin-top:20px;
-  width:75%;
+  width:80%;
+  color: #060606;
   background-color: #F8F9F9;
   /* Offset sur le côté, offset sur la hauteur, effet de flou, longeur de l'ombre
   et couleur de l'ombre, contient shadow-color, background-color, box-color et l'opacité
@@ -117,6 +118,6 @@ a {
 }
 
 a:hover {
-  text-decoration: bold;
+  font-weight: bold;
   color:white;
 }

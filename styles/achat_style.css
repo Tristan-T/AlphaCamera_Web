@@ -50,8 +50,9 @@ main {
 #achat_background {
   margin:auto;
   margin-top:20px;
-  width:80%;
-  background-color: #F8F9F9;
+  color: #060606;
+	width:80%;
+	background-color: #F8F9F9;
   /* Offset sur le côté, offset sur la hauteur, effet de flou, longeur de l'ombre
   et couleur de l'ombre, contient shadow-color, background-color, box-color et l'opacité
   Ici on omet volontairement la longueur de l'ombre et on en superpose deux */
