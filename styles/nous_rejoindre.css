@@ -50,9 +50,8 @@ h1{
 
 main {
 	/*text-align:center;*/
-	background-color: white;
+	background-color: #F8F9F9;
 	margin: 5%;
-	border-radius:2%;
 	z-index:-1000;
 	font-size: 120%;
 }

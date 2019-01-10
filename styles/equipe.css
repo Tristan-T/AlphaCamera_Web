@@ -1,8 +1,7 @@
 main {
 	margin: 5%;
 	padding: 3%;
-	background-color:white;
-	border-radius:2%;
+	background-color:#F8F9F9;
 	z-index:-1000;
 	font-size: 150%;
 }
