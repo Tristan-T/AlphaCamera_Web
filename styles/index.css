@@ -248,7 +248,7 @@
 	transition: transform 0.5s ease-out;
 }
 
-#line_timeline {
+.line_timeline {
 	position : absolute;
 	top: 2.3vh;
 	height: 3px;
