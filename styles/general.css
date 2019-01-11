@@ -140,9 +140,8 @@ nav div {
 #fleche {
 	height: 50px;
 	width: 50px;
-	border:3px solid  #969696;
-	background-color:  #d2d3d3;
-	border-radius:10%;
+	background-color: #f8f7f7;
+	border-radius:50%;
 	z-index: 1;
 }
 
