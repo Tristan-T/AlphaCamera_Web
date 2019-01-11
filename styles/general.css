@@ -13,11 +13,11 @@ body {
 	padding: 0;
 }
 
-header {
+header#menu_desktop {
 	z-index: 1000000;
 }
 
-nav {
+nav#nav_desktop {
 	background-color: #f8f7f7;
 	font-size: 3em;
 	display: flex;
@@ -29,17 +29,17 @@ nav {
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
-nav > div a{
+nav#nav_desktop > div a{
 	/*background-color: pink; TEST*/
 	text-decoration: none;
 	color: #060606;
 }
 
-nav > div a:hover{
+nav#nav_desktop > div a:hover{
 	color: #f46464;
 }
 
-nav div {
+nav#nav_desktop > div {
 	/*background-color: blue; TEST*/
 	height: 90px;
 	display: flex;
@@ -130,9 +130,9 @@ nav div {
 	width: 100%;
 }
 
-.borderbottommenu {
-	border-bottom: 0.1px solid #101010;
-}
+.margintopless {
+	 padding-top:2vh;
+ }
 
 
 /* Flèche retour */
@@ -220,60 +220,126 @@ footer div ul li a:hover {
 
 /* Responsive */
 
+#header_responsive {
+	display: none;
+}
+
 @media(max-width: 1275px){
-	nav {
-		font-size: 4vw;
-	}
-	#dropdownmenugeneral {
-		height: 32vh;
-		width: 20vw;
-		font-size: 3vw;
-		line-height: 3vh;
-	}
-	#boxshadowdropdown {
-		height: 32vh;
-		width: 20vw;
-	}
-	#dropdownmenugeneral div {
-		height: 7vh;
-	}
-	.margintopless {
-		margin-top: -1.5vh;
-}
-
-@media(max-width: 1150px){
-	#boxshadowdropdown {
-		height: 29vh
-	}
-	#dropdownmenugeneral {
-		height: 29vh;
-	}
-	.margintopless {
-		margin-top: -1vh;
-	}
-	#addresslogo{
+	#menu_desktop {
 		display: none;
 	}
-}
 
-@media(max-width: 468px){
-	nav {
-		font-size: 7vw;
+	#header_responsive {
+		display: block;
 	}
-	#dropdownmenugeneral {
-		width: 20vw;
+
+	header#header_responsive nav {
+		background-color: #f8f7f7;
+		font-size: 3em;
+		box-shadow: 0px 0px 20px 0px #060606;
+		height:5vw;
 	}
-	#boxshadowdropdown {
-		width: 20vw;
+
+ 	nav img {
+		height:4vw;
+		position: absolute;
+		top:0.5vw;
+		left:46vw;
 	}
-	#addresslogo{
-		display: none;
+
+	#menuToggle {
+	  position: relative;
+		top:1.5vw;
+		margin-left: 2.5vw;
+	  z-index: 1;
 	}
-	#dropdownmenugeneral a {
-		font-size: 5vw;
+
+	#menuToggle input
+	{
+	  width: 4vw;
+	  height: 3.2vw;
+	  position: absolute;
+	  top: -0.7vw;
+	  left: -0.7vw;
+	  cursor: pointer;
+	  opacity: 0;
+	  z-index: 2;
+	}
+
+	#menuToggle span
+	{
+	  display: block;
+	  width: 3.3vw;
+	  height: 0.4vw;
+	  margin-bottom: 0.5vw;
+	  position: relative;
+	  background: #cdcdcd;
+	  border-radius: 3px;
+	  z-index: 1;
+	  transform-origin: 4px 0px;
+	  transition: all 0.5s;
+	}
+
+	#menuToggle span:first-child
+	{
+	  transform-origin: 0% 0%;
+	}
+
+	#menuToggle span:nth-last-child(2)
+	{
+	  transform-origin: 0% 100%;
+	}
+
+	#menuToggle input:checked ~ span
+	{
+	  opacity: 1;
+	  transform: rotate(45deg) translate(-2px, -1px);
+	  background: #232323;
+	}
+
+	#menuToggle input:checked ~ span:nth-last-child(3)
+	{
+	  opacity: 0;
+	  transform: rotate(0deg) scale(0.2, 0.2);
+	}
+
+	#menuToggle input:checked ~ span:nth-last-child(2)
+	{
+	  transform: rotate(-45deg) translate(0, -1px);
+	}
+
+	#menu
+	{
+	  position: absolute;
+	  width: 50vw;
+	  margin: -100px 0 0 -50px;
+	  padding: 5vw;
+	  padding-top: 10vw;
+	  background: #f8f7f7;
+	  transform: translate(-100%, 0);
+	  transition: transform 0.5s;
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	}
+
+	#menuToggle input:checked ~ div#menu
+	{
+	  transform: none;
+	}
+
+	#menu div a{
+		color: #060606;
+		text-decoration: none;
+	}
+
+	#menu div {
+		padding: 2vh 0 2vh 0;
+		border-bottom: 1px solid black;
+	}
+
+	#menu div a:hover{
+		color:  #f46464;
 	}
 }
-
 
 /* Syling général */
 

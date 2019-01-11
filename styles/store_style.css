@@ -112,12 +112,12 @@ div .store_element > div:first-child {
   color:red;
 }
 
-a {
+a#store_link {
   text-decoration:none;
   color:white;
 }
 
-a:hover {
+a#store_link:hover {
   font-weight: bold;
   color:white;
 }

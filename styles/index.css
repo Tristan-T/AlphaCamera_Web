@@ -1,5 +1,16 @@
 /*-------------------------------------*/
+.title_index{
+	font-size: 4em;
+	font-weight: bold;
+	margin:0;
+	padding: 1em;
+}
 
+.text_index{
+	font-size: 2.5em;
+}
+
+/*-------------------------------------*/
 .textbetween {
 	background-color: #f8f7f7;
 	width : 100%;
@@ -7,17 +18,9 @@
 	z-index: 500;
 }
 
-#bioeyetitle {
-	font-weight: bold;
-	padding: 30px;
-	font-size: 3vw;
-}
-
 #txt1 {
 	color: #060606;
 	height: 25%;
-	font-size: 3vw;
-	font-weight: bold;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
@@ -26,7 +29,6 @@
 }
 
 #txt1petit {
-	font-size: 2vw;
 	width: 75%;
 	margin: auto;
 	font-weight: normal;
@@ -34,7 +36,6 @@
 
 #txt2 {
 	color: #060606;
-	font-size: 2vw;
 	box-shadow: 0px 0px 20px 0px #060606;
 }
 
@@ -45,7 +46,6 @@
 	align-items: stretch;
 	align-content: flex-start;
 	margin-top: 10vh;
-	font-size: 2vw;
 }
 
 #txt3 {
@@ -55,7 +55,6 @@
 }
 
 #txt3 p {
-	font-size: 3vw;
 	line-height: 3vw;
 	font-weight: bold;
 	margin: 0;
@@ -67,7 +66,6 @@
 #txt4 {
 	color: #060606;
 	box-shadow: 0px 0px 20px 0px #060606;
-	font-size:2vw;
 }
 
 /*-------------------------------------*/
@@ -133,14 +131,14 @@
 	background-image: url(../images/parallax6.jpg);
 	position: relative;
 	z-index: -300;
-	height: 40vh;
+	height: 25vh;
 }
 
 #parallax5 {
 	background-image: url(../images/parallax1.jpg);
 	position: relative;
 	z-index: -300;
-	height: 40vh;
+	height: 25vh;
 }
 
 /*-------------------------------------*/
@@ -170,7 +168,6 @@
 	color: #f8f7f7;
 	height: 3vh;
 	padding: 2vh;
-	font-size: 2vw;
 }
 
 .tab:first-child label {
@@ -178,7 +175,6 @@
 	color: #f8f7f7;
 	height: 3vh;
 	padding: 2vh;
-	font-size: 2vw;
 	border-radius: 6px 0px 0px 0px;
 }
 
@@ -187,12 +183,10 @@
 	color: #f8f7f7;
 	height: 3vh;
 	padding: 2vh;
-	font-size: 2vw;
 	border-radius: 0px 6px 0px 0px;
 }
 
 .contentselectmktext {
-	font-size: 2vw;
 }
 
 .animationcontentmkselect {
@@ -204,9 +198,8 @@
 .contentmkselect {
 	background-color: #5f5f5f;
 	color: #f8f7f7;
-	font-size: 3vw;
 	position: absolute;
-	top: 3vw;
+	top: 6.2vh;
 	left: 0;
 	padding: 40px;
 	visibility: hidden;
@@ -232,9 +225,9 @@
 /*-------------------------------------*/
 
 #timelinecontainer {
+	height: 100%;
 	width: 100%;
 	overflow: hidden;
-	height : 50vh;
 	position: relative;
 }
 
@@ -259,7 +252,6 @@
 }
 
 #circle_timeline1 {
-	font-size: 1.5vw;
 	height: 5vh;
 	width: 5vh;
 	border-radius: 50%;
@@ -271,7 +263,6 @@
 }
 
 #circle_timeline2 {
-	font-size: 1.5vw;
 	height: 5vh;
 	width: 5vh;
 	border-radius: 50%;
@@ -283,7 +274,6 @@
 }
 
 #circle_timeline3 {
-	font-size: 1.5vw;
 	height: 5vh;
 	width: 5vh;
 	border-radius: 50%;
@@ -295,7 +285,6 @@
 }
 
 #circle_timeline4 {
-	font-size: 1.5vw;
 	height: 5vh;
 	width: 5vh;
 	border-radius: 50%;
@@ -327,7 +316,6 @@
 	visibility: visible;
 	top: 6.5vh;
 	left: 1.75%;
-	font-size: 1.6vw;
 	position: relative;
 	width: 90%;
 	background-color: #5f5f5f;
@@ -399,7 +387,6 @@ blockquote {
 
 .review {
 	color: #060606;
-	font-size: 2vw;
 	background-color: #f2f2f2;
 	border-radius: 10px;
 	margin: 1vw;
@@ -411,7 +398,6 @@ blockquote p {
 }
 
 cite {
-	font-size: 1.8vw;
 }
 
 /*-------------------------------------*/
@@ -429,14 +415,6 @@ footer {
 	height: 70vh;
 	}
 
-	#txt1 {
-	font-size: 4.5vw;
-	}
-
-	#txt2 {
-		height:60vh;
-	}
-
 	#txt2techdescribe {
 	display: block;
 	margin-top: 4vh;
@@ -444,6 +422,10 @@ footer {
 
 	#alphacameramkimage {
 	margin-bottom: 4vh;
+	}
+	
+	#txt2{
+	height: 130vh;;
 	}
 
 	#mkselection {
@@ -458,17 +440,10 @@ footer {
 	height: 60vh;
 	}
 
-	#txt1 {
-	font-size: 5.5vw;
-	}
-
 	#txt2 {
 	height: 90vw;
 	}
 
-	.text_timeline {
-	font-size: 3.5vh;;
-	}
 }
 
 @media(max-width: 800px){
@@ -503,15 +478,9 @@ footer {
 }
 
 @media(max-width: 705px){
-	#timelinecontainer {
-	height: 80vh;
-	}
 }
 
 @media(max-width: 625px){
-	#timelinecontainer {
-	height: 95vh;
-	}
 }
 
 @media(max-width: 650px){
@@ -529,9 +498,6 @@ footer {
 }
 
 @media(max-width: 486px){
-	#timelinecontainer {
-	height: 110vh;
-	}
 }
 
 @media(max-width: 468px){
@@ -542,16 +508,8 @@ footer {
 	#parallax2 {
 	height: 10vh;
 	}
-
-	#txt1 {
-	font-size: 6.5vw;
-	}
-
+	
 	#txt2 {
 	height: 100vw;
-	}
-
-	#timelinecontainer {
-	height: 120vh;
 	}
 }
